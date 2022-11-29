@@ -1,0 +1,27 @@
+.sec3 {
+  padding-top: 550px;
+  padding-bottom: 400px;
+}
+.sec3__title {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 100px;
+}
+
+.sec3__title h2 {
+  position: relative;
+}
+
+.sec3__title em {
+  color: #fe451c;
+  margin-right: 10px;
+  font-size: 130px;
+}
+
+.sec3__title .subtitle {
+  font-size: 26px;
+  position: absolute;
+  right: 25.5%;
+  top: 76%;
+}

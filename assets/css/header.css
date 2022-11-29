@@ -1,0 +1,32 @@
+#headerType {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+.header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 40px 0 40px;
+  background: #000;
+  color: #fff;
+}
+
+.portfolio {
+  margin-top: -34px;
+  margin-left: 24px;
+  padding: 5px 14px;
+}
+
+.portfolio a {
+  color: #fff;
+}
+
+.menu {
+  margin-top: -34px;
+  margin-left: 20px;
+  padding: 5px 14px;
+  color: #fff;
+}

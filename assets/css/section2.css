@@ -1,0 +1,477 @@
+.sec2 {
+  color: #fff;
+  padding: 55px 40px 100px 40px;
+}
+
+.sec2__inner {
+  overflow: hidden;
+}
+
+.sec2__title {
+  box-sizing: border-box;
+  font-size: 90px;
+  text-transform: uppercase;
+  padding-bottom: 186px;
+}
+
+.sec2__title em {
+  padding-right: 10px;
+  font-size: 130px;
+  color: #fe451c;
+}
+
+.sec2__title span {
+  font-size: 30px;
+  vertical-align: 72px;
+}
+
+.introduce {
+  float: right;
+  padding-bottom: 20px;
+  text-align: justify;
+  width: 66%;
+  line-height: 1.6;
+  word-break: keep-all;
+  border-bottom: 1px dashed #fff;
+}
+
+.aboutMe__inner {
+  margin-top: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about__left {
+  width: 20%;
+  position: relative;
+}
+
+.about__center {
+  width: 45%;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-right: 1px dashed #fff;
+  border-left: 1px dashed #fff;
+  position: relative;
+}
+
+.about__center::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  border-left: 1px dashed #fff;
+  position: absolute;
+  left: -10px;
+  top: 0;
+}
+
+.about__center::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  border-right: 1px dashed #fff;
+  position: absolute;
+  right: -10px;
+  top: 0;
+}
+
+.profileImg {
+  border: 1px solid #fff;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.centerBom__inner {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 200;
+  line-height: 2;
+}
+
+.centerBom__left {
+  padding-right: 80px;
+  box-sizing: border-box;
+  border-right: 1px dashed #fff;
+}
+
+.centerBom__center {
+  padding-right: 80px;
+  margin-left: -80px;
+  box-sizing: border-box;
+  border-right: 1px dashed #fff;
+}
+
+.centerBom__right {
+  padding-right: 80px;
+  margin-left: -80px;
+  box-sizing: border-box;
+  border-right: 1px dashed #fff;
+}
+
+.about__right {
+  width: 30%;
+}
+
+.rightTop {
+  border: 1px dashed #fff;
+  padding: 30px 25px 195px 25px;
+  text-transform: uppercase;
+}
+
+.rightTop_title {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 3px 40px;
+  font-size: 20px;
+  font-weight: 800;
+  background: #fff;
+  color: #000;
+}
+
+.rightTop__desc {
+  border-top: 1px dashed #fff;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.6;
+}
+
+.name,
+.age,
+.height,
+.address,
+.mbti,
+.certification {
+  border-bottom: 1px dashed #fff;
+  padding-top: 25px;
+  padding-bottom: 2px;
+}
+
+.rightTop__desc em {
+  float: right;
+}
+
+/* 애니메이션1 */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@-webkit-keyframes part {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+@-moz-keyframes part {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+@keyframes part {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  /* margin-right: -50%; */
+  /* transform: translate(-50%, -50%); */
+}
+
+svg {
+  height: 100vh;
+  width: 100%;
+}
+
+path {
+  opacity: 0.2;
+}
+
+circle.circle {
+  animation: part 1.6s infinite ease-in-out;
+}
+
+/* 애니메이션 2 */
+.rightBom {
+  position: relative;
+}
+
+.rightBom circle {
+  margin-top: 200px;
+  position: absolute;
+  font-size: 30vmin;
+  width: 0.6em;
+  height: 0.6em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  animation: size 5s infinite linear;
+}
+.rightBom circle::after {
+  content: "";
+  display: block;
+  border: 1px solid;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: shape 7s infinite linear;
+}
+
+@-webkit-keyframes shape {
+  50% {
+    border-radius: 0;
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shape {
+  50% {
+    border-radius: 0;
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes size {
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+@keyframes size {
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+.rightBom circle:nth-child(1) {
+  animation-delay: 0.17s;
+}
+.rightBom circle:nth-child(1):after {
+  animation-delay: 0.13s;
+}
+
+.rightBom circle:nth-child(2) {
+  animation-delay: 0.34s;
+}
+.rightBom circle:nth-child(2):after {
+  animation-delay: 0.26s;
+}
+
+.rightBom circle:nth-child(3) {
+  animation-delay: 0.51s;
+}
+.rightBom circle:nth-child(3):after {
+  animation-delay: 0.39s;
+}
+
+.rightBom circle:nth-child(4) {
+  animation-delay: 0.68s;
+}
+.rightBom circle:nth-child(4):after {
+  animation-delay: 0.52s;
+}
+
+.rightBom circle:nth-child(5) {
+  animation-delay: 0.85s;
+}
+.rightBom circle:nth-child(5):after {
+  animation-delay: 0.65s;
+}
+
+.rightBom circle:nth-child(6) {
+  animation-delay: 1.02s;
+}
+.rightBom circle:nth-child(6):after {
+  animation-delay: 0.78s;
+}
+
+.rightBom circle:nth-child(7) {
+  animation-delay: 1.19s;
+}
+.rightBom circle:nth-child(7):after {
+  animation-delay: 0.91s;
+}
+
+.rightBom circle:nth-child(8) {
+  animation-delay: 1.36s;
+}
+.rightBom circle:nth-child(8):after {
+  animation-delay: 1.04s;
+}
+
+.rightBom circle:nth-child(9) {
+  animation-delay: 1.53s;
+}
+.rightBom circle:nth-child(9):after {
+  animation-delay: 1.17s;
+}
+
+.rightBom circle:nth-child(10) {
+  animation-delay: 1.7s;
+}
+.rightBom circle:nth-child(10):after {
+  animation-delay: 1.3s;
+}
+
+.rightBom circle:nth-child(11) {
+  animation-delay: 1.87s;
+}
+.rightBom circle:nth-child(11):after {
+  animation-delay: 1.43s;
+}
+
+.rightBom circle:nth-child(12) {
+  animation-delay: 2.04s;
+}
+.rightBom circle:nth-child(12):after {
+  animation-delay: 1.56s;
+}
+
+.rightBom circle:nth-child(13) {
+  animation-delay: 2.21s;
+}
+.rightBom circle:nth-child(13):after {
+  animation-delay: 1.69s;
+}
+
+.rightBom circle:nth-child(14) {
+  animation-delay: 2.38s;
+}
+.rightBom circle:nth-child(14):after {
+  animation-delay: 1.82s;
+}
+
+.rightBom circle:nth-child(15) {
+  animation-delay: 2.55s;
+}
+.rightBom circle:nth-child(15):after {
+  animation-delay: 1.95s;
+}
+
+.rightBom circle:nth-child(16) {
+  animation-delay: 2.72s;
+}
+.rightBom circle:nth-child(16):after {
+  animation-delay: 2.08s;
+}
+
+.rightBom circle:nth-child(17) {
+  animation-delay: 2.89s;
+}
+.rightBom circle:nth-child(17):after {
+  animation-delay: 2.21s;
+}
+
+.rightBom circle:nth-child(18) {
+  animation-delay: 3.06s;
+}
+.rightBom circle:nth-child(18):after {
+  animation-delay: 2.34s;
+}
+
+.rightBom circle:nth-child(19) {
+  animation-delay: 3.23s;
+}
+.rightBom circle:nth-child(19):after {
+  animation-delay: 2.47s;
+}
+
+.rightBom circle:nth-child(20) {
+  animation-delay: 3.4s;
+}
+.rightBom circle:nth-child(20):after {
+  animation-delay: 2.6s;
+}
+
+.rightBom circle:nth-child(21) {
+  animation-delay: 3.57s;
+}
+.rightBom circle:nth-child(21):after {
+  animation-delay: 2.73s;
+}
+
+.rightBom circle:nth-child(22) {
+  animation-delay: 3.74s;
+}
+.rightBom circle:nth-child(22):after {
+  animation-delay: 2.86s;
+}
+
+.rightBom circle:nth-child(23) {
+  animation-delay: 3.91s;
+}
+.rightBom circle:nth-child(23):after {
+  animation-delay: 2.99s;
+}
+
+.rightBom circle:nth-child(24) {
+  animation-delay: 4.08s;
+}
+.rightBom circle:nth-child(24):after {
+  animation-delay: 3.12s;
+}
+
+.rightBom circle:nth-child(25) {
+  animation-delay: 4.25s;
+}
+.rightBom circle:nth-child(25):after {
+  animation-delay: 3.25s;
+}
+
+.rightBom circle:nth-child(26) {
+  animation-delay: 4.42s;
+}
+.rightBom circle:nth-child(26):after {
+  animation-delay: 3.38s;
+}
+
+.rightBom circle:nth-child(27) {
+  animation-delay: 4.59s;
+}
+.rightBom circle:nth-child(27):after {
+  animation-delay: 3.51s;
+}
+
+.rightBom circle:nth-child(28) {
+  animation-delay: 4.76s;
+}
+.rightBom circle:nth-child(28):after {
+  animation-delay: 3.64s;
+}
+
+.rightBom circle:nth-child(29) {
+  animation-delay: 4.93s;
+}
+.rightBom circle:nth-child(29):after {
+  animation-delay: 3.77s;
+}
+
+.rightBom circle:nth-child(30) {
+  animation-delay: 5.1s;
+}
+.rightBom circle:nth-child(30):after {
+  animation-delay: 3.9s;
+}

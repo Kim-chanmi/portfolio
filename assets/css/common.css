@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+/* skip 메뉴 */
+#skip {
+  position: relative;
+  z-index: 100000;
+}
+
+#skip a {
+  background: #000;
+  color: #fff;
+  position: absolute;
+  padding: 20px 40px;
+  left: -400px;
+  top: 5px;
+}
+
+#skip a:active,
+#skip a:focus {
+  left: 5px;
+}
+
+/* font */
+.theramy {
+  font-family: "Theramy";
+  font-weight: normal;
+}
+
+.score {
+  font-family: "SCoreDream";
+  font-weight: 300;
+}
+
+.poppins {
+  font-family: "Poppins";
+  font-weight: 800;
+}
+
+/* 배경 */
+.black {
+  background-color: #000;
+}
+
+.white {
+  background-color: #f2f2f2;
+}

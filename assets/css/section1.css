@@ -1,0 +1,64 @@
+#section1 {
+  padding-top: 115px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.sec1__inner {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-bottom: 210px;
+  border-bottom: 1px dashed #fff;
+}
+
+.title__inner {
+  line-height: 0.8;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.title1,
+.title2,
+.title4,
+.title5 {
+  font-size: 114px;
+  text-align: left;
+}
+
+.title2 {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.title3,
+.title6 {
+  font-size: 113px;
+  color: #fe451c;
+  text-transform: capitalize;
+}
+
+.title3 {
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.title4 {
+  background-image: url(../img/main.svg);
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position: 960px 20px;
+}
+
+.title5 {
+  margin-bottom: 30px;
+}
+
+.title6 {
+  text-align: right;
+  text-transform: capitalize;
+  background-image: url(../img/main2.svg);
+  background-repeat: no-repeat;
+  background-size: 160px;
+  background-position: 900px -10px;
+}
