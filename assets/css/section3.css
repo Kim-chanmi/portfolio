@@ -1,9 +1,30 @@
 .sec3 {
   padding-top: 500px;
-  padding-bottom: 400px;
-}
-.sec3__title {
+  padding-bottom: 250px;
   color: #fff;
+}
+
+/* .horizontalWrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.horizontalSection {
+  overscroll-behavior: none;
+  width: 500%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.sec3-1 {
+  width: 100%;
+  height: 100vh;
+} */
+
+.sec3__inner {
+  margin-bottom: 400px;
+}
+
+.sec3__title {
   text-transform: uppercase;
   text-align: center;
   font-size: 100px;
@@ -24,4 +45,80 @@
   position: absolute;
   right: 25.5%;
   top: 76%;
+}
+
+.site01,
+.site02,
+.site03,
+.site04,
+.site05 {
+  margin-top: 250px;
+  padding-bottom: 50px;
+  background-clip: text;
+  position: relative;
+}
+
+.backgroundText {
+  font-size: 140px;
+  line-height: 1.1;
+  text-align: center;
+  text-align: justify;
+}
+
+.webstandard {
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.webstandard__inner {
+  position: relative;
+  border: 1px solid #fff;
+  padding: 200px 350px;
+  background-color: rgba(0, 0, 0, 0.94);
+}
+
+.webstandard__inner .web {
+  color: #fe451c;
+}
+
+.webstandard__inner h2 {
+  margin-bottom: 2px;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.webstandard__inner p {
+  font-weight: 200;
+}
+
+.webstandard__inner .detail {
+  display: inline-block;
+  margin-top: 85px;
+  border: 1px solid #fe451c;
+  background-color: #fe451c;
+  padding: 12px 70px;
+}
+
+.webstandard__inner .view {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.webstandard__inner .view .number {
+  padding: 16px 26px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 300;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.webstandard__inner .view .number.active {
+  background-color: #fe451c;
 }
