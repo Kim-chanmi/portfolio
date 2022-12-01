@@ -65,10 +65,65 @@
 .border_top::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
+  top: 5px;
+  left: 5px;
+  width: 0.6vw;
+  height: 0.8px;
+  /* height: 1.3333333333vw; */
+  background-color: #fe451c;
+}
+
+.border_top::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 0.6vw;
+  height: 0.8px;
+  /* height: 1.3333333333vw; */
+  background-color: #fe451c;
+}
+
+.border_bom::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 0.6vw;
   height: 1px;
+  /* height: 1.3333333333vw; */
+  background-color: #fe451c;
+}
+
+.border_bom::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 0.6vw;
+  height: 1px;
+  /* height: 1.3333333333vw; */
+  background-color: #fe451c;
+}
+
+.border_left::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 0.8px;
+  height: 0.6vw;
+  /* height: 1.3333333333vw; */
+  background-color: #fe451c;
+}
+
+.border_left::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 0.8px;
+  height: 0.6vw;
   /* height: 1.3333333333vw; */
   background-color: #fe451c;
 }
