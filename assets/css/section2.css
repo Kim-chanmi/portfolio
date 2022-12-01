@@ -1,6 +1,6 @@
 .sec2 {
   color: #fff;
-  padding: 55px 40px 100px 40px;
+  padding: 2.2vw 2.2vw 20vw 2.2vw;
 }
 
 .sec2__inner {
@@ -9,25 +9,27 @@
 
 .sec2__title {
   box-sizing: border-box;
-  font-size: 90px;
+  font-size: 5.6vw;
   text-transform: uppercase;
-  padding-bottom: 186px;
+  margin-top: 11vw;
+  padding-bottom: 11vw;
 }
 
 .sec2__title em {
-  padding-right: 10px;
-  font-size: 130px;
+  padding-right: 1.4vw;
+  font-size: 8vw;
   color: #fe451c;
 }
 
 .sec2__title span {
-  font-size: 30px;
-  vertical-align: 72px;
+  font-size: 2vw;
+  vertical-align: 4.3vw;
 }
 
 .introduce {
   float: right;
-  padding-bottom: 20px;
+  font-size: 1vw;
+  padding-bottom: 1.2vw;
   text-align: justify;
   width: 66%;
   line-height: 1.6;
@@ -36,7 +38,7 @@
 }
 
 .aboutMe__inner {
-  margin-top: 380px;
+  margin-top: 30vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -49,8 +51,8 @@
 
 .about__center {
   width: 45%;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 1.6vw;
+  padding-left: 1.6vw;
   border-right: 1px dashed #fff;
   border-left: 1px dashed #fff;
   position: relative;
@@ -62,7 +64,7 @@
   height: 100%;
   border-left: 1px dashed #fff;
   position: absolute;
-  left: -10px;
+  left: -1%;
   top: 0;
 }
 
@@ -72,41 +74,42 @@
   height: 100%;
   border-right: 1px dashed #fff;
   position: absolute;
-  right: -10px;
+  right: -1%;
   top: 0;
 }
 
 .profileImg {
   border: 1px solid #fff;
-  padding: 30px;
+  padding: 1.8vw;
   box-sizing: border-box;
 }
 
 .centerBom__inner {
-  margin-top: 50px;
+  margin-top: 3vw;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
   font-weight: 200;
   line-height: 2;
+  font-size: 1vw;
 }
 
 .centerBom__left {
-  padding-right: 80px;
+  padding-right: 4.7vw;
   box-sizing: border-box;
   border-right: 1px dashed #fff;
 }
 
 .centerBom__center {
-  padding-right: 80px;
-  margin-left: -80px;
+  padding-right: 4.7vw;
+  margin-left: -4.7vw;
   box-sizing: border-box;
   border-right: 1px dashed #fff;
 }
 
 .centerBom__right {
-  padding-right: 80px;
-  margin-left: -80px;
+  padding-right: 4.7vw;
+  margin-left: -4.7vw;
   box-sizing: border-box;
   border-right: 1px dashed #fff;
 }
@@ -117,15 +120,17 @@
 
 .rightTop {
   border: 1px dashed #fff;
-  padding: 30px 25px 195px 25px;
+  padding: 1.8vw 1.6vw 8.9vw 1.6vw;
+  width: 28.6vw;
+  height: 39.13vw;
   text-transform: uppercase;
 }
 
 .rightTop_title {
   display: inline-block;
-  margin-bottom: 25px;
-  padding: 3px 40px;
-  font-size: 20px;
+  margin-bottom: 1.6vw;
+  padding: 0.3vw 3vw;
+  font-size: 1.2vw;
   font-weight: 800;
   background: #fff;
   color: #000;
@@ -133,7 +138,7 @@
 
 .rightTop__desc {
   border-top: 1px dashed #fff;
-  font-size: 20px;
+  font-size: 1.2vw;
   font-weight: 200;
   line-height: 1.6;
 }
@@ -145,8 +150,8 @@
 .mbti,
 .certification {
   border-bottom: 1px dashed #fff;
-  padding-top: 25px;
-  padding-bottom: 2px;
+  padding-top: 1.6vw;
+  padding-bottom: 0.1vw;
 }
 
 .rightTop__desc em {
@@ -184,19 +189,23 @@
 }
 
 #container {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
+  width: 20vw;
+  /* height: 100vh; */
   overflow: hidden;
-  /* position: absolute;
+  position: absolute;
   top: 50%;
-  left: 50%; */
+  left: 50%;
   /* margin-right: -50%; */
-  /* transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
 }
 
 svg {
-  height: 100vh;
+  height: 60vw;
   width: 100%;
+  /* height: 100vh;
+  width: 100%; */
 }
 
 path {
@@ -213,11 +222,11 @@ circle.circle {
 }
 
 .rightBom circle {
-  margin-top: 200px;
+  margin-top: 12vw;
   position: absolute;
-  font-size: 30vmin;
-  width: 0.6em;
-  height: 0.6em;
+  font-size: 25vw;
+  width: 9vw;
+  height: 9vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

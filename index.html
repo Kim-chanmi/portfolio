@@ -29,12 +29,24 @@
     <header id="headerType" class="header__wrap poppins">
       <div class="header__inner">
         <div class="header__left">
-          <img src="assets/img/border.png" alt="" />
-          <div class="portfolio"><a href="#section1">PORTFOLIO</a></div>
+          <div class="portfolio">
+            <a href="#section1"
+              ><span class="border_topH"></span>
+              <span class="border_bomH"></span>
+              <span class="border_leftH"></span>
+              <span class="border_rightH"></span>
+              <div class="portfolioName">PORTFOLIO</div></a
+            >
+          </div>
         </div>
         <div class="header__right">
-          <img src="assets/img/border2.png" alt="" />
-          <div class="menu">MENU</div>
+          <div class="menu">
+            <span class="border_topH"></span>
+            <span class="border_bomH"></span>
+            <span class="border_leftH"></span>
+            <span class="border_rightH"></span>
+            <div class="menuName">MENU</div>
+          </div>
           <nav class="nav"></nav>
         </div>
       </div>
@@ -44,69 +56,18 @@
     <main id="mainType">
       <section id="section1" class="sec1 poppins black">
         <div class="sec1__inner">
-          <div class="letter_top">
-            #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /&nbsp;&nbsp;&nbsp;&nbsp;
-            %&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;
-            (&nbsp;&nbsp;&nbsp;(&nbsp;&nbsp; ,&nbsp;&nbsp; .&nbsp;&nbsp; #
-            &nbsp;&nbsp;.&nbsp;&nbsp;&nbsp; /&nbsp;&nbsp; # &nbsp;&nbsp;(&nbsp;
-            % &nbsp;&nbsp;&nbsp;, &nbsp;&nbsp;. @&nbsp;&nbsp;&nbsp;&nbsp;
-            (&nbsp;&nbsp; #&nbsp;&nbsp; ,
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;((&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            % &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@&nbsp; %&nbsp;&nbsp;&nbsp;&nbsp;
-            @&nbsp; %&nbsp;&nbsp;&nbsp;
-            #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .% &nbsp;&nbsp;&nbsp;#
-            &nbsp;&nbsp;/
-            &nbsp;&nbsp;&nbsp;.@/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            @&nbsp;&nbsp;&nbsp;&nbsp; .&nbsp;&nbsp;&nbsp; #.&nbsp;&nbsp;
-            ,&nbsp;&nbsp;%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            /&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,
-            &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp; /&nbsp;&nbsp;
-            @&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
-            /&nbsp;&nbsp;&nbsp;&nbsp; ,&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;
-            @&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;&nbsp;
-            ,&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@&nbsp;&nbsp;&nbsp;&nbsp;
-            #&nbsp;&nbsp; /( &nbsp;@&nbsp;&nbsp;&nbsp; &nbsp;@&nbsp;
-            @&nbsp;&nbsp; #&nbsp;&nbsp;&nbsp; % &nbsp;&nbsp;.&nbsp;&nbsp;
-            <!-- # / %/. (( , . # . / # ( % , . @ ( # , ((/ % @ % @ % # .% # / .@/ @
-            . #. ,% /. , / / @/ / ,, @% ,#@ # /( @ @ @ # % . / , # (@ , % @
-            ,/#,% ,,(% . ./ ( @ -->
-          </div>
-          <p>Change the world by being yourself</p>
-          <div>
-            @&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
-            /&nbsp;&nbsp;&nbsp;&nbsp; ,&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;
-            @&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%&nbsp;&nbsp;
-            ,&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@&nbsp;&nbsp;&nbsp;&nbsp;
-            #&nbsp;&nbsp; /( &nbsp;@&nbsp;&nbsp;&nbsp; &nbsp;@&nbsp;
-            @&nbsp;&nbsp; #&nbsp;&nbsp;&nbsp; %
-            &nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            /&nbsp;&nbsp;&nbsp;&nbsp; # /&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,
-            &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp; /&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;((&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            % &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@&nbsp; %&nbsp;&nbsp;&nbsp;&nbsp;
-            @&nbsp; %&nbsp;&nbsp;&nbsp;
-            #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .% &nbsp;&nbsp;&nbsp;#
-            %&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;
-            (&nbsp;&nbsp;&nbsp;(&nbsp;&nbsp; ,&nbsp;&nbsp; .&nbsp;&nbsp; #
-            &nbsp;&nbsp;.&nbsp;&nbsp;&nbsp; /&nbsp;&nbsp; # &nbsp;&nbsp;(&nbsp;
-            % &nbsp;&nbsp;&nbsp;, &nbsp;&nbsp;. @&nbsp;&nbsp;&nbsp;&nbsp;
-            (&nbsp;&nbsp; #&nbsp;&nbsp; , &nbsp;&nbsp;/
-            &nbsp;&nbsp;&nbsp;.@/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            @&nbsp;&nbsp;&nbsp;&nbsp; .&nbsp;&nbsp;&nbsp; #.&nbsp;&nbsp;
-            ,&nbsp;&nbsp;%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </div>
           <div class="title__inner">
-            <div class="title title1">Only I can change me life,</div>
-            <div class="title title2">no one can do it</div>
-            <div class="title title3 theramy">This is best of portfolio</div>
-            <div class="title title4">goal-oriented</div>
-            <div class="title title5">FRONT-END DEVELOPER</div>
-            <div class="title title6 theramy">Kim chanmi</div>
+            <div class="tit1">Only I can change me life,</div>
+            <div class="tit2">no one can do it</div>
+            <div class="tit3 theramy">This is best of portfolio</div>
+            <div class="tit4">goal-oriented</div>
+            <div class="tit5">FRONT-END DEVELOPER</div>
+            <div class="tit6 theramy">Kim chanmi</div>
           </div>
+          <canvas id="canvas"></canvas>
         </div>
       </section>
+      <!-- section1 -->
       <section id="section2" class="sec2 black">
         <div class="sec2__inner">
           <div class="sec2__title">
@@ -655,22 +616,42 @@
           </div>
         </div>
       </section>
+      <!-- section2 -->
+
       <section id="section3" class="sec3 black">
+        <div class="sec3__inner">
+          <div class="sec3-1 sec3__title">
+            <h2 class="poppins">
+              <em class="theramy">02</em>web site
+              <div class="score subtitle">react, vue, php site</div>
+            </h2>
+          </div>
+        </div>
         <div class="horizontalWrap">
           <div class="horizontalSection">
-            <div class="sec3__inner sec3-1">
-              <div class="sec3__title">
-                <h2 class="poppins">
-                  <em class="theramy">02</em>web site
-                  <div class="score subtitle">react, vue, php site</div>
-                </h2>
+            <div class="animated__title">
+              <div class="track">
+                <div class="backgroundText poppins">
+                  <div>
+                    Only I can change me life,Only I can change me life, Only I
+                    can change me life,
+                  </div>
+                  <div class="theramy">
+                    no one can do it no one can do it no one can do it no one
+                    can do it no one can do it no one can do it
+                  </div>
+                  <div>
+                    challengeable AND goal-oriented challengeable AND
+                    goal-oriented challengeable AND goal-oriented
+                  </div>
+                  <div class="theramy">
+                    front-end developer front-end developer front-end developer
+                    front-end developer front-end developer
+                  </div>
+                </div>
               </div>
             </div>
             <div class="sec3-1 site01">
-              <div class="backgroundText poppins">
-                Only I can change me life, no one can do it challengeable AND
-                goal-oriented FRONT-END DEVELOPER
-              </div>
               <div class="webstandard">
                 <div class="webstandard__inner">
                   <div class="web">web site</div>
@@ -684,10 +665,6 @@
               </div>
             </div>
             <div class="sec3-1 site02">
-              <div class="backgroundText poppins">
-                Only I can change me life, no one can do it. challengeable AND
-                goal-oriented front-end developer. Only I can cha
-              </div>
               <div class="webstandard">
                 <div class="webstandard__inner">
                   <div class="web">web site</div>
@@ -701,10 +678,6 @@
               </div>
             </div>
             <div class="sec3-1 site03">
-              <div class="backgroundText poppins">
-                Only I can change me life, no one can do it. challengeable AND
-                goal-oriented front-end developer. Only I can cha
-              </div>
               <div class="webstandard">
                 <div class="webstandard__inner">
                   <div class="web">web site</div>
@@ -723,16 +696,12 @@
               </div>
             </div>
             <div class="sec3-1 site04">
-              <div class="backgroundText poppins">
-                Only I can change me life, no one can do it. challengeable AND
-                goal-oriented front-end developer. Only I can cha
-              </div>
               <div class="webstandard">
                 <div class="webstandard__inner">
                   <div class="web">web site</div>
                   <h2>VUE&nbsp;SINGLE&nbsp;SITE</h2>
                   <p>
-                    웹표준 사이트 레이아웃을 리액트를 사용하여 만든 <br />
+                    웹표준 사이트 레이아웃을 뷰를 사용하여 만든 <br />
                     사이트입니다.
                   </p>
                   <div class="detail">자세히 보기</div>
@@ -745,10 +714,6 @@
               </div>
             </div>
             <div class="sec3-1 site05">
-              <div class="backgroundText poppins">
-                Only I can change me life, no one can do it. challengeable AND
-                goal-oriented front-end developer. Only I can cha
-              </div>
               <div class="webstandard">
                 <div class="webstandard__inner">
                   <div class="web">web site</div>
@@ -761,7 +726,6 @@
                   <div class="view">
                     <div class="number active">1</div>
                     <div class="number">2</div>
-                    <div class="number">3</div>
                   </div>
                 </div>
               </div>
@@ -769,6 +733,8 @@
           </div>
         </div>
       </section>
+      <!-- section3 -->
+
       <section id="section4" class="sec4 white score">
         <div class="sec4__inner">
           <div class="sec4__title">
@@ -881,6 +847,8 @@
           </div>
         </div>
       </section>
+      <!-- section4 -->
+
       <section id="section5" class="sec5 white score">
         <div class="sec5__inner">
           <div class="sec5__title">
@@ -990,6 +958,7 @@
           </div>
         </div>
       </section>
+      <!-- section5 -->
     </main>
     <!-- main -->
 
@@ -997,56 +966,151 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script>
-      // gsap.registerPlugin(ScrollTrigger);
+      // smooth 효과
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+      });
 
-      // const sections = gsap.utils.toArray(".sec3-1"); // 다중이 == querySelectorAll
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
 
-      // gsap.to(sections, {
-      //   xPercent: -100 * (sections.length - 1),
-      //   ease: "none",
-      //   scrollTrigger: {
-      //     trigger: ".horizontalWrap",
-      //     pin: true,
-      //     scrub: 1,
-      //     end: "+=800", //speed
-      //     snap: 1 / (sections.length - 1), // scroll 살짝만 해도 알아서 sectionn영역으로 움직임
-      //     markers: true,
-      //   },
-      // });
-      // gsap.registerPlugin(ScrollTrigger);
+      requestAnimationFrame(raf);
 
-      // const lenis = new Lenis({
-      //   duration: 1.2,
-      //   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-      // });
+      // main 글씨 효과
+      gsap.to(".tit1, .tit4", {
+        x: 700,
+        scrollTrigger: {
+          scrub: 1,
+        },
+      });
 
-      // function raf(time) {
-      //   lenis.raf(time);
-      //   requestAnimationFrame(raf);
-      // }
+      gsap.to(".tit2, .tit5", {
+        x: -700,
+        scrollTrigger: {
+          scrub: 1,
+        },
+      });
 
-      // requestAnimationFrame(raf);
+      // 가로모드
+      gsap.registerPlugin(ScrollTrigger);
 
-      // const tl = gsap
-      //   .timeline({
-      //     scrollTrigger: {
-      //       trigger: ".title__inner .title",
-      //       start: "top 0%",
-      //       scrub: 2,
-      //     },
-      //   })
-      //   .to(".title", {
-      //     x: -200,
-      //     scrub: true,
-      //     stagger: 0.1,
-      //     easing: "power1.inOut",
-      //   });
-      // // .to(".title2", {
-      // //   x: 200,
-      // //   scrub: true,
-      // //   stagger: 0.6,
-      // //   easing: "power1.out",
-      // // });
+      const sections = gsap.utils.toArray(".sec3-1"); // 다중이 == querySelectorAll
+
+      gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".horizontalWrap",
+          pin: true,
+          scrub: 1,
+          end: "+=4000", //speed
+          snap: 1 / (sections.length - 1), // scroll 살짝만 해도 알아서 sectionn영역으로 움직임
+          markers: true,
+        },
+      });
+      gsap.registerPlugin(ScrollTrigger);
+    </script>
+    <script>
+      // main 배경
+      let c = init("canvas"),
+        w = (canvas.width = window.innerWidth),
+        h = (canvas.height = window.innerHeight - 100);
+      //initiation
+
+      class firefly {
+        constructor() {
+          this.x = Math.random() * w;
+          this.y = Math.random() * h;
+          this.s = Math.random() * 2;
+          this.ang = Math.random() * 2 * Math.PI;
+          this.v = (this.s * this.s) / 4;
+        }
+        move() {
+          this.x += this.v * Math.cos(this.ang);
+          this.y += this.v * Math.sin(this.ang);
+          this.ang +=
+            (Math.random() * 20 * Math.PI) / 180 - (10 * Math.PI) / 180;
+        }
+        show() {
+          c.beginPath();
+          c.arc(this.x, this.y, this.s, 0, 2 * Math.PI);
+          c.fillStyle = "#ffffff";
+          c.fill();
+        }
+      }
+
+      let f = [];
+
+      function draw() {
+        if (f.length < 100) {
+          for (let j = 0; j < 10; j++) {
+            f.push(new firefly());
+          }
+        }
+        //animation
+        for (let i = 0; i < f.length; i++) {
+          f[i].move();
+          f[i].show();
+          if (f[i].x < 0 || f[i].x > w || f[i].y < 0 || f[i].y > h) {
+            f.splice(i, 1);
+          }
+        }
+      }
+
+      let mouse = {};
+      let last_mouse = {};
+
+      canvas.addEventListener(
+        "mousemove",
+        function (e) {
+          last_mouse.x = mouse.x;
+          last_mouse.y = mouse.y;
+
+          mouse.x = e.pageX - this.offsetLeft;
+          mouse.y = e.pageY - this.offsetTop;
+        },
+        false
+      );
+      function init(elemid) {
+        let canvas = document.getElementById(elemid),
+          c = canvas.getContext("2d"),
+          w = (canvas.width = window.innerWidth),
+          h = (canvas.height = window.innerHeight);
+        c.fillStyle = "rgba(30,30,30,1)";
+        c.fillRect(0, 0, w, h);
+        return c;
+      }
+
+      window.requestAnimFrame = function () {
+        return (
+          window.requestAnimationFrame ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame ||
+          window.oRequestAnimationFrame ||
+          window.msRequestAnimationFrame ||
+          function (callback) {
+            window.setTimeout(callback);
+          }
+        );
+      };
+
+      function loop() {
+        window.requestAnimFrame(loop);
+        c.clearRect(0, 0, w, h);
+        draw();
+      }
+
+      window.addEventListener("resize", function () {
+        (w = canvas.width = window.innerWidth),
+          (h = canvas.height = window.innerHeight);
+        loop();
+      });
+
+      loop();
+      setInterval(loop, 1000 / 60);
     </script>
   </body>
 </html>

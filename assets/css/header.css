@@ -1,35 +1,113 @@
 #headerType {
-  width: 100%;
-  height: 6.1111vw;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10000;
-  background: linear-gradient(#000, transparent);
+  /* background: linear-gradient(#000, transparent); */
+  backdrop-filter: blur(10px);
 }
 .header__inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 40px 40px 0 40px;
+  padding: 2.2vw 2.2vw 0 2.2vw;
   box-sizing: border-box;
   /* background: #000; */
   color: #fff;
-}
-
-.portfolio {
-  margin-top: -34px;
-  margin-left: 24px;
-  padding: 5px 14px;
+  font-size: 1.2vw;
 }
 
 .portfolio a {
   color: #fff;
+  position: relative;
+}
+.portfolioName,
+.menuName {
+  padding: 0.8vw 2vw;
+  font-size: 1vw;
 }
 
 .menu {
-  margin-top: -34px;
-  margin-left: 20px;
-  padding: 5px 14px;
-  color: #fff;
+  position: relative;
+}
+
+.border_topH::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 0.4vw;
+  height: 0.1vh;
+  background-color: #fe451c;
+}
+
+.border_topH::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 0.4vw;
+  height: 0.1vh;
+  background-color: #fe451c;
+}
+
+.border_bomH::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 0.4vw;
+  height: 0.1vh;
+  background-color: #fe451c;
+}
+
+.border_bomH::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 0.4vw;
+  height: 0.1vh;
+  background-color: #fe451c;
+}
+
+.border_leftH::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 0.1vw;
+  height: 0.8vh;
+  background-color: #fe451c;
+}
+
+.border_leftH::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 0.1vw;
+  height: 0.8vh;
+  background-color: #fe451c;
+}
+
+.border_rightH::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 0.1vw;
+  height: 0.8vh;
+  background-color: #fe451c;
+}
+
+.border_rightH::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 0.1vw;
+  height: 0.8vh;
+  background-color: #fe451c;
 }

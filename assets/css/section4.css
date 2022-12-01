@@ -1,29 +1,29 @@
 .sec4 {
-  padding: 210px 40px 100px 40px;
+  padding: 16vw 2.2vw 3vw 2.2vw;
   box-sizing: border-box;
 }
 
 .sec4__inner {
-  /* height: 1000px; */
   border-top: 1px dashed #000;
 }
 
 .sec4__title {
   box-sizing: border-box;
-  font-size: 90px;
+  font-size: 5.6vw;
   text-transform: uppercase;
-  padding-bottom: 186px;
+  padding-bottom: 11vw;
 }
 
 .sec4__title em {
-  padding-right: 10px;
-  font-size: 130px;
+  padding-right: 1.4vw;
+  font-size: 8vw;
   color: #fe451c;
 }
 
 .effect {
   float: right;
-  padding-bottom: 20px;
+  font-size: 1vw;
+  padding-bottom: 1.2vw;
   text-align: right;
   width: 66%;
   line-height: 1.6;
@@ -32,8 +32,8 @@
 }
 
 .effectCont__inner {
-  padding: 0 150px;
-  margin-top: 300px;
+  padding: 0 11vw;
+  margin-top: 22vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -41,16 +41,16 @@
 
 .effectCont {
   width: 30%;
-  padding-bottom: 200px;
+  padding-bottom: 10vw;
 }
 
 .effectCont:nth-child(2),
 .effectCont:nth-child(5),
 .effectCont:nth-child(8) {
-  margin-top: 200px;
+  margin-top: 8vw;
 }
 
 .effectCont .theramy {
   color: #fe451c;
-  margin-top: 10px;
+  margin-top: 0.8vw;
 }
