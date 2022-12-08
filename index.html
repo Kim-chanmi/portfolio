@@ -1579,16 +1579,20 @@
       // 검정 -> 흰색
       ScrollTrigger.create({
         // 어디에 닿으면 반응할건지
-        trigger: ".site__inner",
+        trigger: ".sec4",
         scrub: 1,
         // 어디다가 적용할건지
         animation: gsap.fromTo(
           ".sec3",
           {
-            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 83%)",
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 96%)",
+            duration: 2,
+            delay: 2,
           },
           {
-            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+            duration: 2,
+            delay: 2,
           }
         ),
       });
