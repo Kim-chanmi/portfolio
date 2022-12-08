@@ -968,7 +968,7 @@ circle.circle {
 
 @media (max-width: 1000px) {
   #header {
-    padding-top: 2vw;
+    padding-top: 3vw;
   }
   #section1 {
     height: 100%;
@@ -1026,12 +1026,23 @@ circle.circle {
 
   .rightTop {
     width: 49%;
-    height: 36vh;
+    height: 50vh;
     margin-top: 2vw;
+    border: 0.1vw dashed #666;
   }
 
   .rightTop__desc {
     line-height: 6vw;
+    border-top: 0.1vw dashed #666;
+  }
+
+  .name,
+  .age,
+  .height,
+  .address,
+  .mbti,
+  .certification {
+    border-bottom: 0.1vw dashed #666;
   }
 
   .rightBom {
