@@ -1,6 +1,7 @@
 .sec3 {
   padding-bottom: 30vw;
   color: #fff;
+  clip-path: polygon(0 0, 100% 0, 100% 98%, 0% 100%);
 }
 
 .horizontalWrap {
@@ -11,7 +12,7 @@
 
 .horizontalSection {
   overscroll-behavior: none;
-  width: 460%;
+  width: 640%;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -23,7 +24,6 @@
 }
 
 .sec3__inner {
-  /* margin-bottom: 400px; */
   width: 100%;
   height: 100vh;
 }
@@ -32,7 +32,6 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 5.6vw;
-  /* margin-bottom: 30vw; */
 }
 
 .sec3__title h2 {
@@ -46,23 +45,11 @@
 }
 
 .sec3__title .subtitle {
-  /* padding-bottom: 10vw; */
   font-size: 1.2vw;
   position: absolute;
   right: 26%;
   top: 76%;
 }
-
-/* .site01,
-.site02,
-.site03,
-.site04,
-.site05 {
-  margin-top: 250px;
-  padding-bottom: 50px;
-  background-clip: text;
-  position: relative;
-} */
 
 .animated__title {
   position: relative;
@@ -128,39 +115,40 @@
   }
 }
 
-.webstandard {
+.site__wrap {
   text-align: center;
   text-transform: uppercase;
   position: absolute;
   top: 55%;
   left: 75%;
   transform: translate(-50%, -50%);
+  /* z-index: 99999; */
 }
 
-.webstandard__inner {
+.site__inner {
   position: relative;
   border: 1px solid #fff;
   padding: 12vw 22vw;
   background-color: rgba(0, 0, 0, 0.94);
 }
 
-.webstandard__inner .web {
+.site__inner .web {
   color: #fe451c;
   font-size: 1vw;
 }
 
-.webstandard__inner h2 {
+.site__inner h2 {
   margin-bottom: 2px;
   font-size: 3.5vw;
   font-weight: 600;
 }
 
-.webstandard__inner p {
+.site__inner p {
   font-weight: 200;
   font-size: 1.1vw;
 }
 
-.webstandard__inner .detail {
+.site__inner .detail {
   display: inline-block;
   margin-top: 6vw;
   border: 1px solid #fe451c;
@@ -168,26 +156,77 @@
   padding: 0.8vw 5vw;
 }
 
-.webstandard__inner .view {
+.site__inner .view {
   position: absolute;
   right: 1.6vw;
   top: 1.6vw;
+  z-index: 10000;
   cursor: pointer;
 }
 
-.webstandard__inner .view .number {
+.site__inner .view .number {
   padding: 1vw 1.65vw;
   margin-bottom: 20px;
   font-size: 1.5vw;
   font-weight: 300;
   border: 1px solid #fff;
   border-radius: 50%;
+  z-index: 10000;
+  cursor: pointer;
 }
 
-.webstandard__inner .view .number.active {
+.site__inner .view .number.active {
   background-color: #fe451c;
 }
 
+/* 자세히보기 */
+.detail__wrap {
+  display: none;
+}
+
+.detail__inner {
+  width: 80%;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  border: 1px solid #fe451c;
+}
+
+.detail__inner img {
+  width: 50%;
+}
+
+.detail__desc {
+  width: 50%;
+  padding: 7vw 4vw 0;
+  border-left: 1px solid #fe451c;
+}
+
+.detail__desc h2 {
+  font-size: 2vw;
+  color: #fe451c;
+  margin-bottom: 3vw;
+}
+
+.detail__desc p {
+  font-size: 0.9vw;
+  font-weight: 200;
+  line-height: 1.6;
+  margin-bottom: 4vw;
+  word-break: keep-all;
+}
+
+.detail__desc .viewSite {
+  font-size: 1vw;
+  display: inline-block;
+  background: #fe451c;
+  color: #fff;
+  padding: 0.6vw 3vw;
+  cursor: pointer;
+}
 /* canvas 배경 */
 #canvas2 {
   position: absolute;

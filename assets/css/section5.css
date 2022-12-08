@@ -1,5 +1,6 @@
 .sec5 {
-  padding: 16vw 2.2vw 3vw 2.2vw;
+  padding: 0 2.2vw 3vw 2.2vw;
+  margin-top: -20vw;
   box-sizing: border-box;
   padding-bottom: 16vw;
 }
