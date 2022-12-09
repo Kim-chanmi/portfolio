@@ -912,7 +912,12 @@ circle.circle {
 
 /* 자세히보기 */
 .detail__wrap {
-  display: none;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.detail__wrap:hover {
+  opacity: 1;
 }
 
 .detail__inner {
