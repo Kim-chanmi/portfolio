@@ -849,6 +849,7 @@ circle.circle {
   top: 54vw;
   left: 75%;
   transform: translate(-50%, -50%);
+  transition: all 3s;
   /* z-index: 99999; */
 }
 
@@ -920,7 +921,6 @@ circle.circle {
   top: 1%;
   left: 10%;
   display: flex;
-  transition-delay: 3s;
   background: #000;
   border: 1px solid #fe451c;
 }
@@ -932,6 +932,9 @@ circle.circle {
 .detail__desc {
   width: 50%;
   border-left: 1px solid #fe451c;
+  display: grid;
+  place-content: center;
+  padding: 3vw;
 }
 
 .detail__desc h2 {
@@ -949,12 +952,13 @@ circle.circle {
 }
 
 .detail__desc .viewSite {
+  width: 15vw;
   font-size: 1vw;
   display: inline-block;
+  margin: auto;
   background: #fe451c;
   color: #fff;
   padding: 0.6vw 3vw;
-  cursor: pointer;
 }
 /* canvas 배경 */
 #canvas2 {
@@ -1032,7 +1036,7 @@ circle.circle {
 /* section5 */
 .sec5 {
   padding: 0 2.2vw 3vw 2.2vw;
-  margin-top: -20vw;
+  /* margin-top: -20vw; */
   box-sizing: border-box;
   padding-bottom: 16vw;
 }
@@ -1068,7 +1072,7 @@ circle.circle {
   justify-content: space-between;
 }
 
-.studyList__wrap span {
+.studyList__wrap > span {
   width: 8%;
   height: 2vw;
   padding-top: 0.3vw;
@@ -1092,17 +1096,282 @@ circle.circle {
 .studyList__inner .studyList {
   width: 23.8%;
   height: 10vw;
-  /* text-align: center; */
   border: 1px solid #000;
-  /* padding-top: 2.2vw; */
   position: relative;
   font-size: 1vw;
-}
-/* 
-.studyList .name {
+  display: grid;
+  place-content: center;
   text-align: center;
-  padding-top: 3.5vw;
+  transition: all 0.3s;
+}
+
+.studyList__inner .studyList:hover {
+  background-color: #fe451c;
+  border-color: #fe451c;
+  color: #fff;
+}
+
+/* .vertex2 {
+  position: relative;
 } */
+.vertex2 span {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.vertex2 span:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+.vertex2 span:nth-child(2) {
+  right: 0;
+  top: 0;
+}
+.vertex2 span:nth-child(3) {
+  left: 0;
+  top: 0;
+}
+.vertex2 span:nth-child(4) {
+  right: 0;
+  top: 0;
+}
+.vertex2 span:nth-child(1):before {
+  content: "";
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  width: 0.4vw;
+  height: 0.1vw;
+  background: #fe451c;
+}
+.vertex2 span:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  width: 0.1vw;
+  height: 0.4vw;
+  background: #fe451c;
+}
+
+.vertex2 span:nth-child(2):before {
+  content: "";
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  width: 0.4vw;
+  height: 0.1vw;
+  background: #fe451c;
+}
+.vertex2 span:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  width: 0.1vw;
+  height: 0.4vw;
+  background: #fe451c;
+}
+
+.vertex2 span:nth-child(3):before {
+  content: "";
+  position: absolute;
+  left: 1%;
+  bottom: 1%;
+  width: 0.4vw;
+  height: 0.1vw;
+  background: #fe451c;
+}
+.vertex2 span:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  left: 1%;
+  bottom: 1%;
+  width: 0.1vw;
+  height: 0.4vw;
+  background: #fe451c;
+}
+
+.vertex2 span:nth-child(4):before {
+  content: "";
+  position: absolute;
+  right: 1%;
+  bottom: 1%;
+  width: 0.4vw;
+  height: 0.1vw;
+  background: #fe451c;
+}
+.vertex2 span:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  right: 1%;
+  bottom: 1%;
+  width: 0.1vw;
+  height: 0.4vw;
+  background: #fe451c;
+}
+
+/* section6 */
+.sec6 {
+  padding: 16vw 2.2vw 0 2.2vw;
+  box-sizing: border-box;
+}
+
+.sec6__title {
+  box-sizing: border-box;
+  font-size: 4.6vw;
+  text-transform: uppercase;
+  /* padding-bottom: 11vw; */
+}
+
+.sec6__title em {
+  padding-right: 1.4vw;
+  font-size: 7vw;
+  color: #fe451c;
+}
+
+.contactMe__inner {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px dashed #000;
+  border-bottom: 1vw solid #fe451c;
+}
+
+.contactMe__list {
+  width: 65%;
+  padding: 1vw 0 1vw 1vw;
+  box-sizing: border-box;
+  border-bottom: 1px dashed #000;
+  border-right: 1px dashed #000;
+}
+
+.contactMe__list ul {
+  height: 18vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  line-height: 1.8;
+  font-size: 1vw;
+}
+
+.contactMe__cont {
+  width: 35%;
+  padding: 2vw 0 2vw 2vw;
+  border-bottom: 1px dashed #000;
+}
+
+.contactMe__cont .contTit {
+  display: inline-block;
+  padding: 0.3vw 2vw;
+  margin-bottom: 1vw;
+  font-size: 1.2vw;
+  background: #000;
+  color: #fff;
+}
+
+.contactMe__cont .contDesc {
+  font-size: 0.9vw;
+  line-height: 1.6;
+  margin-bottom: 2vw;
+}
+
+.contactMe__cont .cont {
+  line-height: 1.6;
+  font-size: 1vw;
+}
+
+.contactMe__ment {
+  width: 65%;
+  padding: 3vw 0 3vw 2vw;
+  font-size: 5vw;
+  border-right: 1px dashed #000;
+}
+
+.contactMe__ment > div:nth-child(2) {
+  color: #fe451c;
+}
+
+.contactMe__ani {
+  width: 35%;
+}
+
+/* 애니메이션 */
+/* KEYFRAMES */
+
+@keyframes spin3D {
+  from {
+    transform: rotate3d(0.5, 0.5, 0.5, 360deg);
+  }
+  to {
+    transform: rotate3d(0deg);
+  }
+}
+
+.contactMe__ani {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner-box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.leo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.blue-orbit {
+  width: 12vw;
+  height: 12vw;
+  border: 2px solid #f3d7d4;
+  animation: spin3D 3s linear 0.2s infinite;
+}
+
+.green-orbit {
+  width: 10vw;
+  height: 10vw;
+  border: 2px solid #db9f95;
+  animation: spin3D 2s linear 0s infinite;
+}
+
+.red-orbit {
+  width: 8vw;
+  height: 8vw;
+  border: 2px solid #c56869;
+  animation: spin3D 1s linear 0s infinite;
+}
+
+.white-orbit {
+  width: 6vw;
+  height: 6vw;
+  border: 3px solid #702c2b;
+  animation: spin3D 10s linear 0s infinite;
+}
+
+.w1 {
+  transform: rotate3D(1, 1, 1, 90deg);
+}
+
+.w2 {
+  transform: rotate3D(1, 2, 0.5, 90deg);
+}
+
+.w3 {
+  transform: rotate3D(0.5, 1, 2, 90deg);
+}
 
 @media (max-width: 1000px) {
   #header {
@@ -1201,6 +1470,24 @@ circle.circle {
   .site__wrap {
     top: 62vw;
   }
+
+  .studyList__wrap {
+    margin-top: 30vw;
+  }
+
+  .studyList__inner {
+    width: 100%;
+  }
+
+  .studyList__wrap > span {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .studyList__wrap {
+    margin-top: 40vw;
+  }
 }
 
 @media (max-width: 510px) {
@@ -1212,5 +1499,15 @@ circle.circle {
   }
   .effectCont .theramy {
     margin-top: 2vw;
+  }
+}
+
+@media (max-width: 428px) {
+  .studyList__wrap {
+    margin-top: 60vw;
+  }
+  .studyList__inner .studyList {
+    width: 48%;
+    height: 16vw;
   }
 }
