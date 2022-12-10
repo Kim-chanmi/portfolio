@@ -11,7 +11,7 @@
   position: fixed;
   left: 0;
   top: -10vw;
-  width: 100vw;
+  width: 100%;
   /* height: 5vw; */
   padding: 1.4vw 2.2vw;
   display: flex;
@@ -838,6 +838,7 @@ circle.circle {
 .sec3-1 {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .site__wrap {
@@ -846,7 +847,7 @@ circle.circle {
   text-align: center;
   text-transform: uppercase;
   position: absolute;
-  top: 54vw;
+  top: 52vw;
   left: 75%;
   transform: translate(-50%, -50%);
   transition: all 3s;
@@ -864,7 +865,7 @@ circle.circle {
 
 .site__inner .web {
   color: #fe451c;
-  /* font-size: 1vw; */
+  font-size: 1vw;
 }
 
 .site__inner h2 {
@@ -875,7 +876,7 @@ circle.circle {
 
 .site__inner p {
   font-weight: 200;
-  /* font-size: 1.1vw; */
+  font-size: 1.1vw;
 }
 
 .site__inner .detail {
@@ -884,7 +885,7 @@ circle.circle {
   border: 1px solid #fe451c;
   background-color: #fe451c;
   padding: 0.8vw 5vw;
-  /* font-size: 1.1vw; */
+  font-size: 1.1vw;
 }
 
 .site__inner .view {
@@ -893,21 +894,7 @@ circle.circle {
   top: 1.6vw;
   z-index: 10000;
   cursor: pointer;
-}
-
-.site__inner .view .number {
-  padding: 1vw 1.65vw;
-  margin-bottom: 20px;
-  font-size: 1.5vw;
-  font-weight: 300;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  z-index: 10000;
-  cursor: pointer;
-}
-
-.site__inner .view .number.active {
-  background-color: #fe451c;
+  font-size: 1vw;
 }
 
 /* 자세히보기 */
@@ -961,7 +948,7 @@ circle.circle {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
 
@@ -1511,6 +1498,35 @@ circle.circle {
 
   .site__wrap {
     top: 62vw;
+  }
+
+  .animated__title {
+    display: none;
+  }
+
+  .horizontalSection {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+  .horizontalWrap {
+    height: 100%;
+  }
+
+  .site__wrap {
+    width: 80%;
+    top: 50%;
+    left: 50%;
+  }
+
+  .site__inner {
+    margin-right: 0;
+  }
+
+  .sec3-1 {
+    height: 50vh;
   }
 
   .studyList__wrap {
