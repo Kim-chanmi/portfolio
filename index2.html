@@ -1442,6 +1442,7 @@
           // markers: true,
         },
       });
+
       // 헤더
       ScrollTrigger.create({
         // 어디에 닿으면 반응할건지
@@ -1481,23 +1482,26 @@
       });
 
       // effect 나타내기
-      const tl = gsap
-        .timeline({
-          scrollTrigger: {
-            trigger:
-              ".effectCont:nth-child(2), .effectCont:nth-child(5), .effectCont:nth-child(8)",
-            scrub: 1,
-          },
-        })
-        .to(
-          ".effectCont:nth-child(2), .effectCont:nth-child(5), .effectCont:nth-child(8)",
-          {
-            y: -200,
-            scrub: 1,
-            stagger: 0.1,
-            easing: "power1.out",
-          }
-        );
+      let mm = gsap.matchMedia();
+      mm.add("(min-width: 510px)", () => {
+        const tl = gsap
+          .timeline({
+            scrollTrigger: {
+              trigger:
+                ".effectCont:nth-child(2), .effectCont:nth-child(5), .effectCont:nth-child(8)",
+              scrub: 1,
+            },
+          })
+          .to(
+            ".effectCont:nth-child(2), .effectCont:nth-child(5), .effectCont:nth-child(8)",
+            {
+              y: -1000,
+              scrub: 1,
+              stagger: 0.1,
+              ease: "power1.out",
+            }
+          );
+      });
     </script>
     <script>
       let c = init("canvas"),
