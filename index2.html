@@ -16,18 +16,37 @@
     <link rel="stylesheet" href="assets/css/style2.css" />
   </head>
   <body>
+    <div id="skip">
+      <a href="#section1">메인 영역 바로가기</a>
+      <a href="#section2">ABOUT ME 바로가기</a>
+      <a href="#section3">SITE 바로가기</a>
+      <a href="#section4">EFFECT 바로가기</a>
+      <a href="#section5">CONTACT ME 바로가기</a>
+    </div>
+    <!-- skip -->
+
     <header id="header">
-      <h1 class="vertex">
-        portfolio
-        <em class="arrow" aria-hidden="true"
-          ><span></span><span></span><span></span><span></span
-        ></em>
-      </h1>
-      <nav class="vertex">
+      <a href="#section1">
+        <h1 class="vertex">
+          portfolio
+          <em class="arrow" aria-hidden="true"
+            ><span></span><span></span><span></span><span></span
+          ></em>
+        </h1>
+      </a>
+      <nav class="vertex menu">
         menu
         <em class="arrow" aria-hidden="true"
           ><span></span><span></span><span></span><span></span
         ></em>
+        <ul>
+          <li><a href="#section1">Main</a></li>
+          <li><a href="#section2">About Me</a></li>
+          <li><a href="#section3">Web Site</a></li>
+          <li><a href="#section4">Effect</a></li>
+          <li><a href="#section5">Study</a></li>
+          <li><a href="#section6">Contact Me</a></li>
+        </ul>
       </nav>
     </header>
     <!-- //header -->
@@ -618,17 +637,21 @@
                 <div class="backgroundText poppins">
                   <div>
                     Only I can change me life,Only I can change me life, Only I
-                    can change me life,
+                    can change me life, Only I can change me life, Only I can
+                    change me life,
                   </div>
                   <div class="theramy">
                     no one can do it no one can do it no one can do it no one
-                    can do it no one can do it no one can do it
+                    can do it no one can do it no one can do it no one can do it
+                    no one can do it
                   </div>
                   <div>
                     challengeable AND goal-oriented challengeable AND
-                    goal-oriented challengeable AND goal-oriented
+                    goal-oriented challengeable AND goal-oriented challengeable
+                    AND goal-oriented challengeable AND goal-oriented
                   </div>
                   <div class="theramy">
+                    front-end developer front-end developer front-end developer
                     front-end developer front-end developer front-end developer
                     front-end developer front-end developer
                   </div>
@@ -647,7 +670,12 @@
                   <div class="detail">자세히 보기</div>
                   <div class="detail__wrap webstandard">
                     <div class="detail__inner">
-                      <img src="assets/img/website01.png" alt="웹표준사이트" />
+                      <figure class="detail__img">
+                        <img
+                          src="assets/img/website01.png"
+                          alt="웹표준사이트"
+                        />
+                      </figure>
                       <div class="detail__desc">
                         <h2>webstandard site</h2>
                         <p>
@@ -659,7 +687,12 @@
                           이동을 편하게 하였고, 스와이퍼를 이용하여 슬라이드에
                           동적인 효과를 더하였습니다.
                         </p>
-                        <a class="viewSite" href="#">사이트 보기</a>
+                        <a
+                          class="viewSite"
+                          href="https://kim-chanmi.github.io/codingclass/site/site1/index.html"
+                          target="_blank"
+                          >사이트 보기</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -678,7 +711,12 @@
                   <div class="detail">자세히 보기</div>
                   <div class="detail__wrap responsive">
                     <div class="detail__inner">
-                      <img src="assets/img/website02.png" alt="반응형사이트" />
+                      <figure class="detail__img">
+                        <img
+                          src="assets/img/website02.png"
+                          alt="반응형사이트"
+                        />
+                      </figure>
                       <div class="detail__desc">
                         <h2>responsive site</h2>
                         <p>
@@ -688,7 +726,12 @@
                           CSS애니메이션을 이용한 마우스오버 애니메이션 효과를
                           볼수 있습니다.
                         </p>
-                        <a class="viewSite" href="#">사이트 보기</a>
+                        <a
+                          class="viewSite"
+                          href="https://kim-chanmi.github.io/codingclass/site/site2/index.html"
+                          target="_blank"
+                          >사이트 보기</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -707,7 +750,12 @@
                   <div class="detail">자세히 보기</div>
                   <div class="detail__wrap reactSite">
                     <div class="detail__inner">
-                      <img src="assets/img/website03.png" alt="리액트사이트" />
+                      <figure class="detail__img">
+                        <img
+                          src="assets/img/website03.png"
+                          alt="리액트사이트"
+                        />
+                      </figure>
                       <div class="detail__desc">
                         <h2>react&nbsp;api&nbsp;site</h2>
                         <p>
@@ -717,7 +765,10 @@
                           가능합니다.
                         </p>
 
-                        <a class="viewSite" href="https://www.naver.com/"
+                        <a
+                          class="viewSite"
+                          href="https://reactapi1717.web.app/"
+                          target="_blank"
                           >사이트 보기</a
                         >
                       </div>
@@ -738,10 +789,12 @@
                   <div class="detail">자세히 보기</div>
                   <div class="detail__wrap reactYoutubeSite">
                     <div class="detail__inner">
-                      <img
-                        src="assets/img/website04.png"
-                        alt="리액트유튜브사이트"
-                      />
+                      <figure class="detail__img">
+                        <img
+                          src="assets/img/website04.png"
+                          alt="리액트유튜브사이트"
+                        />
+                      </figure>
                       <div class="detail__desc">
                         <h2>react&nbsp;youtube&nbsp;site</h2>
                         <p>
@@ -751,7 +804,10 @@
                           넘어갑니다. 검색과 채널보기 기능도 추가하였습니다.
                         </p>
 
-                        <a class="viewSite" href="https://www.naver.com/"
+                        <a
+                          class="viewSite"
+                          href="https://reactyoutube13.netlify.app/"
+                          target="_blank"
                           >사이트 보기</a
                         >
                       </div>
@@ -772,7 +828,9 @@
                   <div class="detail">자세히 보기</div>
                   <div class="detail__wrap vueSite">
                     <div class="detail__inner">
-                      <img src="assets/img/website05.png" alt="뷰사이트" />
+                      <figure class="detail__img">
+                        <img src="assets/img/website05.png" alt="뷰사이트" />
+                      </figure>
                       <div class="detail__desc">
                         <h2>vue&nbsp;site</h2>
                         <p>
@@ -783,7 +841,10 @@
                           했습니다.
                         </p>
 
-                        <a class="viewSite" href="https://www.naver.com/"
+                        <a
+                          class="viewSite"
+                          href="https://vueapi1313.web.app/"
+                          target="_blank"
                           >사이트 보기</a
                         >
                       </div>
@@ -804,7 +865,9 @@
                   <div class="detail">자세히 보기</div>
                   <div class="detail__wrap phpSite">
                     <div class="detail__inner">
-                      <img src="assets/img/website06.png" alt="php사이트" />
+                      <figure class="detail__img">
+                        <img src="assets/img/website06.png" alt="php사이트" />
+                      </figure>
                       <div class="detail__desc">
                         <h2>php&nbsp;site</h2>
                         <p>
@@ -812,7 +875,10 @@
                           제작하였습니다. 댓글 기능, 게시판, 블로그, 로그인,
                           회원가입 기능을 넣었습니다.
                         </p>
-                        <a class="viewSite" href="https://www.naver.com/"
+                        <a
+                          class="viewSite"
+                          href="http://homming.dothome.co.kr/main/main.php"
+                          target="_blank"
                           >사이트 보기</a
                         >
                       </div>
@@ -833,7 +899,9 @@
                   <div class="detail">자세히 보기</div>
                   <div class="detail__wrap phpSite2">
                     <div class="detail__inner">
-                      <img src="assets/img/website07.png" alt="php사이트" />
+                      <figure class="detail__img">
+                        <img src="assets/img/website07.png" alt="php사이트" />
+                      </figure>
                       <div class="detail__desc">
                         <h2>php&nbsp;site</h2>
                         <p>
@@ -842,7 +910,10 @@
                           접속한 후 MySQL을 이용해 데이터베이스에 접속하여
                           데이터들을 수정, 삭제, 복사 등을 할 수 있습니다.
                         </p>
-                        <a class="viewSite" href="https://www.naver.com/"
+                        <a
+                          class="viewSite"
+                          href="http://se11se.dothome.co.kr/phpClass/main/main.php"
+                          target="_blank"
                           >사이트 보기</a
                         >
                       </div>
@@ -874,7 +945,10 @@
           <div class="effectCont__wrap">
             <div class="effectCont__inner">
               <div class="effectCont">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/javascript/effect/mouseEffect01.html"
+                  target="_blank"
+                >
                   <img src="assets/img/effect01.png" alt="마우스이펙트" />
                   <h2 class="theramy">Mouse Effect</h2>
                   <p>
@@ -884,7 +958,10 @@
                 </a>
               </div>
               <div class="effectCont">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/javascript/effect/parallaxEffect01.html"
+                  target="_blank"
+                >
                   <img src="assets/img/effect02.png" alt="페럴렉스이펙트" />
                   <h2 class="theramy">Parallax Effect</h2>
                   <p>
@@ -894,7 +971,10 @@
                 </a>
               </div>
               <div class="effectCont">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/javascript/effect/searchEffect01.html"
+                  target="_blank"
+                >
                   <img src="assets/img/effect03.png" alt="서치이펙트" />
                   <h2 class="theramy">Search Effect</h2>
                   <p>
@@ -904,7 +984,10 @@
                 </a>
               </div>
               <div class="effectCont">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/javascript/effect/sliderEffect01.html"
+                  target="_blank"
+                >
                   <img src="assets/img/effect04.png" alt="슬라이드이펙트" />
                   <h2 class="theramy">Slider Effect</h2>
                   <p>
@@ -914,7 +997,10 @@
                 </a>
               </div>
               <div class="effectCont">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/javascript/effect/quizEffect01.htmls"
+                  target="_blank"
+                >
                   <img src="assets/img/effect05.png" alt="퀴즈이펙트" />
                   <h2 class="theramy">Quiz Effect</h2>
                   <p>
@@ -924,7 +1010,10 @@
                 </a>
               </div>
               <div class="effectCont">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/javascript/effect/gameEffect01.html"
+                  target="_blank"
+                >
                   <img src="assets/img/effect06.png" alt="뮤직플레이어" />
                   <h2 class="theramy">Music Player</h2>
                   <p>
@@ -934,7 +1023,10 @@
                 </a>
               </div>
               <div class="effectCont">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/javascript/effect/gameEffect01.html"
+                  target="_blank"
+                >
                   <img src="assets/img/effect07.png" alt="테트리스게임" />
                   <h2 class="theramy">Tetris Game</h2>
                   <p>
@@ -944,7 +1036,10 @@
                 </a>
               </div>
               <div class="effectCont">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/javascript/effect/gameEffect01.html"
+                  target="_blank"
+                >
                   <img src="assets/img/effect08.png" alt="마우스이펙트" />
                   <h2 class="theramy">Memory Game</h2>
                   <p>
@@ -954,7 +1049,10 @@
                 </a>
               </div>
               <div class="effectCont">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/javascript/effect/gameEffect01.html"
+                  target="_blank"
+                >
                   <img src="assets/img/effect09.png" alt="마우스이펙트" />
                   <h2 class="theramy">Search Game</h2>
                   <p>
@@ -990,7 +1088,10 @@
             <span>study list</span>
             <div class="studyList__inner">
               <div class="studyList">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/html/alphabet.html"
+                  target="_blank"
+                >
                   <div class="vertex2">
                     HTML <br />
                     Reference
@@ -1001,7 +1102,10 @@
                 </a>
               </div>
               <div class="studyList">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/css/index.html"
+                  target="_blank"
+                >
                   <div class="vertex2">
                     CSS <br />
                     Reference
@@ -1012,7 +1116,10 @@
                 </a>
               </div>
               <div class="studyList">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/javascript/index.html"
+                  target="_blank"
+                >
                   <div class="vertex2">
                     Javascript <br />
                     Reference
@@ -1023,7 +1130,10 @@
                 </a>
               </div>
               <div class="studyList">
-                <a href="#">
+                <a
+                  href="https://se-se.tistory.com/category/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98"
+                  target="_blank"
+                >
                   <div class="vertex2">
                     ALGORITHM <br />
                     PROGRAMMERS
@@ -1034,7 +1144,7 @@
                 </a>
               </div>
               <div class="studyList">
-                <a href="#">
+                <a href="https://se-se.tistory.com/" target="_blank">
                   <div class="vertex2">
                     TISTORY BLOG
                     <em class="arrow" aria-hidden="true"
@@ -1044,7 +1154,10 @@
                 </a>
               </div>
               <div class="studyList">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/sql/index.html"
+                  target="_blank"
+                >
                   <div class="vertex2">
                     MYSQL
                     <em class="arrow" aria-hidden="true"
@@ -1054,7 +1167,10 @@
                 </a>
               </div>
               <div class="studyList">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/animation/css.html"
+                  target="_blank"
+                >
                   <div class="vertex2">
                     ANIMATION
                     <em class="arrow" aria-hidden="true"
@@ -1064,7 +1180,10 @@
                 </a>
               </div>
               <div class="studyList">
-                <a href="#">
+                <a
+                  href="https://kim-chanmi.github.io/codingclass/animation/svg.html"
+                  target="_blank"
+                >
                   <div class="vertex2">
                     SVG
                     <em class="arrow" aria-hidden="true"
@@ -1074,7 +1193,7 @@
                 </a>
               </div>
               <div class="studyList">
-                <a href="#">
+                <a href="https://codepen.io/your-work/" target="_blank">
                   <div class="vertex2">
                     CODEPEN
                     <em class="arrow" aria-hidden="true"
@@ -1084,7 +1203,10 @@
                 </a>
               </div>
               <div class="studyList">
-                <a href="#">
+                <a
+                  href="https://se-se.tistory.com/category/jQuery"
+                  target="_blank"
+                >
                   <div class="vertex2">
                     JQUERY
                     <em class="arrow" aria-hidden="true"
@@ -1108,73 +1230,97 @@
               <div class="contactMe__list">
                 <ul>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/javascript/effect/mouseEffect01.html"
+                    >
                       <span>00</span>
                       <span>mouse effect</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/javascript/effect/parallaxEffect01.html"
+                    >
                       <span>01</span>
                       <span>parallax effect</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/javascript/effect/quizEffect01.html"
+                    >
                       <span>02</span>
                       <span>quiz effect</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/javascript/effect/searchEffect01.html"
+                    >
                       <span>03</span>
                       <span>search effect</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/javascript/effect/sliderEffect01.html"
+                    >
                       <span>04</span>
                       <span>slider effect</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/javascript/effect/gameEffect01.html"
+                    >
                       <span>05</span>
                       <span>tetris game</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/javascript/effect/gameEffect01.html"
+                    >
                       <span>06</span>
                       <span>memory game</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/javascript/effect/gameEffect01.html"
+                    >
                       <span>07</span>
                       <span>search game</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/javascript/effect/gameEffect01.html"
+                    >
                       <span>08</span>
                       <span>music player</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/html/alphabet.html"
+                    >
                       <span>09</span>
                       <span>HTML5</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/css/index.html"
+                    >
                       <span>10</span>
                       <span>css3</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/javascript/index.html"
+                    >
                       <span>11</span>
                       <span>javascript</span>
                     </a>
@@ -1186,86 +1332,88 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://se-se.tistory.com/category/jQuery">
                       <span>13</span>
                       <span>jquery</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://reactapi1717.web.app/">
                       <span>14</span>
                       <span>react</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://vueapi1313.web.app/">
                       <span>15</span>
                       <span>vue</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="http://homming.dothome.co.kr/main/main.php">
                       <span>16</span>
                       <span>php</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/animation/css.html"
+                    >
                       <span>17</span>
                       <span>animation</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://se-se.tistory.com/category/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98"
+                    >
                       <span>18</span>
                       <span>algorithm</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/animation/svg.html"
+                    >
                       <span>19</span>
                       <span>svg</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://kim-chanmi.github.io/codingclass/sql/index.html"
+                    >
                       <span>20</span>
-                      <span>animation</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span>21</span>
                       <span>mysql</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <span>22</span>
+                    <a href="https://github.com/Kim-chanmi">
+                      <span>21</span>
                       <span>github</span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <span>23</span>
+                      <span>22</span>
                       <span>netlify</span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <span>24</span>
+                      <span>23</span>
                       <span>firebase</span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <span>25</span>
+                      <span>24</span>
                       <span>bootstrap</span>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <span>26</span>
+                    <a href="https://codepen.io/your-work">
+                      <span>25</span>
                       <span>cpdepen</span>
                     </a>
                   </li>
@@ -1284,7 +1432,9 @@
                   <a href="malito:chanmi0517@naver.com"
                     >E-MAIL : chanmi0517@naver.com</a
                   >
-                  <div>GITHUB : https://github.com/Kim-chanmi</div>
+                  <a href="https://github.com/Kim-chanmi" target="_blank"
+                    ><div>GITHUB : https://github.com/Kim-chanmi</div></a
+                  >
                 </div>
               </div>
               <div class="contactMe__ment theramy">
@@ -1315,6 +1465,15 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script>
+      // 헤더 메뉴 클릭
+      const menu = document.querySelector(".vertex.menu");
+      const menuList = document.querySelector(".vertex ul");
+
+      menu.addEventListener("click", () => {
+        menuList.classList.toggle("show");
+      });
+    </script>
     <script>
       gsap.registerPlugin(ScrollTrigger);
       // smooth 효과
@@ -1439,7 +1598,7 @@
               trigger: ".horizontalWrap",
               pin: true,
               scrub: 1,
-              end: "+=4000", //speed
+              end: "+=3000", //speed
               snap: 1 / (sections.length - 1), // scroll 살짝만 해도 알아서 sectionn영역으로 움직임
               // markers: true,
             },
@@ -1454,17 +1613,34 @@
         scrub: 1,
         // 어디다가 적용할건지
         animation: gsap.fromTo(
-          ".vertex",
+          ".vertex, .vertex ul a, .vertex ul",
           {
             color: "#fff",
           },
           {
             color: "#000",
+            backgroundColor: "#f2f2f2",
           }
         ),
       });
 
-      // 검정 -> 흰색
+      // ScrollTrigger.create({
+      //   // 어디에 닿으면 반응할건지
+      //   trigger: ".sec4",
+      //   scrub: 1,
+      //   // 어디다가 적용할건지
+      //   animation: gsap.fromTo(
+      //     ".vertex ul.show",
+      //     {
+      //       backgroundColor: "#000",
+      //     },
+      //     {
+      //       backgroundColor: "#f2f2f2",
+      //     }
+      //   ),
+      // });
+
+      // sec3 -> sec4
       ScrollTrigger.create({
         // 어디에 닿으면 반응할건지
         trigger: ".sec4",
@@ -1500,6 +1676,27 @@
             ".effectCont:nth-child(2), .effectCont:nth-child(5), .effectCont:nth-child(8)",
             {
               y: -1000,
+              scrub: 1,
+              stagger: 0.1,
+              ease: "power1.out",
+            }
+          );
+      });
+
+      let mm2 = gsap.matchMedia();
+      mm2.add("(min-width: 510px)", () => {
+        const tl = gsap
+          .timeline({
+            scrollTrigger: {
+              trigger:
+                ".effectCont:nth-child(3), .effectCont:nth-child(6), .effectCont:nth-child(9)",
+              scrub: 1,
+            },
+          })
+          .to(
+            ".effectCont:nth-child(3), .effectCont:nth-child(6), .effectCont:nth-child(9)",
+            {
+              y: -400,
               scrub: 1,
               stagger: 0.1,
               ease: "power1.out",
