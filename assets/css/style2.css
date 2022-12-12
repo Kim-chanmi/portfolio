@@ -1543,6 +1543,7 @@ circle.circle {
 
   .site__wrap {
     top: 62vw;
+    height: 50vh;
   }
 
   .animated__title {
