@@ -2,6 +2,10 @@
 @import url(common.css);
 @import url(fonts.css);
 
+body {
+  overflow: hidden;
+}
+
 /* header */
 #header {
   position: fixed;
@@ -322,8 +326,8 @@
 .about__center {
   width: 45%;
   padding: 0 1.6vw;
-  border-right: 1px dashed #fff;
-  border-left: 1px dashed #fff;
+  border-right: 0.1vw dashed #fff;
+  border-left: 0.1vw dashed #fff;
   position: relative;
 }
 
@@ -331,7 +335,7 @@
   content: "";
   width: 1px;
   height: 100%;
-  border-left: 1px dashed #fff;
+  border-left: 0.1vw dashed #fff;
   position: absolute;
   left: -1%;
   top: 0;
@@ -341,14 +345,14 @@
   content: "";
   width: 1px;
   height: 100%;
-  border-right: 1px dashed #fff;
+  border-right: 0.1vw dashed #fff;
   position: absolute;
   right: -1%;
   top: 0;
 }
 
 .profileImg {
-  border: 1px solid #fff;
+  border: 0.1vw solid #fff;
   padding: 1.8vw;
   box-sizing: border-box;
 }
@@ -366,21 +370,21 @@
 .centerBom__left {
   padding-right: 4.7vw;
   box-sizing: border-box;
-  border-right: 1px dashed #fff;
+  border-right: 0.1vw dashed #fff;
 }
 
 .centerBom__center {
   padding-right: 4.7vw;
   margin-left: -4.7vw;
   box-sizing: border-box;
-  border-right: 1px dashed #fff;
+  border-right: 0.1vw dashed #fff;
 }
 
 .centerBom__right {
   padding-right: 4.7vw;
   margin-left: -4.7vw;
   box-sizing: border-box;
-  border-right: 1px dashed #fff;
+  border-right: 0.1vw dashed #fff;
 }
 
 .about__right {
@@ -389,7 +393,7 @@
 }
 
 .rightTop {
-  border: 1px dashed #fff;
+  border: 0.1vw dashed #fff;
   padding: 1.8vw 1.6vw 8.9vw 1.6vw;
   width: 28.6vw;
   height: 39.13vw;
@@ -407,7 +411,7 @@
 }
 
 .rightTop__desc {
-  border-top: 1px dashed #fff;
+  border-top: 0.1vw dashed #fff;
   font-size: 1.2vw;
   font-weight: 200;
   line-height: 1.6;
@@ -419,7 +423,7 @@
 .address,
 .mbti,
 .certification {
-  border-bottom: 1px dashed #fff;
+  border-bottom: 0.1vw dashed #fff;
   padding-top: 1.6vw;
   padding-bottom: 0.1vw;
 }
@@ -506,7 +510,7 @@ circle.circle {
 .rightBom circle::after {
   content: "";
   display: block;
-  border: 1px solid;
+  border: 0.1vw solid;
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -893,7 +897,7 @@ circle.circle {
 .site__inner {
   margin-right: 3vw;
   position: relative;
-  border: 1px solid #fff;
+  border: 0.1vw solid #fff;
   padding: 12vw 22vw;
   background-color: rgba(0, 0, 0, 0.94);
   font-size: 1.1vw;
@@ -918,7 +922,7 @@ circle.circle {
 .site__inner .detail {
   display: inline-block;
   margin-top: 6vw;
-  border: 1px solid #fe451c;
+  border: 0.1vw solid #fe451c;
   background-color: #fe451c;
   padding: 0.8vw 5vw;
   font-size: 1.1vw;
@@ -953,7 +957,7 @@ circle.circle {
   transform: translate(-50%, -50%);
   display: flex;
   background: #000;
-  border: 1px solid #fe451c;
+  border: 0.1vw solid #fe451c;
 }
 
 .detail__img {
@@ -968,7 +972,7 @@ circle.circle {
 
 .detail__desc {
   width: 50%;
-  border-left: 1px solid #fe451c;
+  border-left: 0.1vw solid #fe451c;
   display: grid;
   place-content: center;
   padding: 3vw;
@@ -1042,7 +1046,7 @@ circle.circle {
   width: 66%;
   line-height: 1.6;
   word-break: keep-all;
-  border-bottom: 1px dashed #000;
+  border-bottom: 0.1vw dashed #000;
 }
 
 .effectCont__inner {
@@ -1104,7 +1108,7 @@ circle.circle {
   width: 80%;
   line-height: 1.6;
   word-break: keep-all;
-  border-bottom: 1px dashed #000;
+  border-bottom: 0.1vw dashed #000;
 }
 
 .studyList__wrap {
@@ -1138,7 +1142,7 @@ circle.circle {
 .studyList__inner .studyList {
   width: 23.8%;
   height: 10vw;
-  border: 1px solid #000;
+  border: 0.1vw solid #000;
   position: relative;
   font-size: 1vw;
   display: grid;
@@ -1280,7 +1284,7 @@ circle.circle {
   flex: 0 0 auto;
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px dashed #000;
+  border-top: 0.1vw dashed #000;
   border-bottom: 1vw solid #fe451c;
 }
 
@@ -1288,8 +1292,8 @@ circle.circle {
   width: 65%;
   padding: 1vw 0 1vw 1vw;
   box-sizing: border-box;
-  border-bottom: 1px dashed #000;
-  border-right: 1px dashed #000;
+  border-bottom: 0.1vw dashed #000;
+  border-right: 0.1vw dashed #000;
 }
 
 .contactMe__list ul {
@@ -1352,7 +1356,7 @@ circle.circle {
   width: 65%;
   padding: 3vw 0 3vw 2vw;
   font-size: 5vw;
-  border-right: 1px dashed #000;
+  border-right: 0.1vw dashed #000;
 }
 
 .contactMe__ment > div:nth-child(2) {
