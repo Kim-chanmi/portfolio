@@ -1659,6 +1659,24 @@ circle.circle {
   .rightTop__desc {
     font-size: 2.4vw;
   }
+
+  .site__inner .web {
+    font-size: 2vw;
+  }
+
+  .site__inner h2 {
+    font-size: 4vw;
+  }
+
+  .site__inner p {
+    font-size: 2vw;
+  }
+  .site__inner .detail {
+    font-size: 2vw;
+  }
+  .detail__desc p {
+    font-size: 2vw;
+  }
 }
 
 @media (max-width: 428px) {
