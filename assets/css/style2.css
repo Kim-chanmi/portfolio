@@ -1700,7 +1700,6 @@ circle.circle {
 } */
 
 @media (max-width: 510px) {
-  #header.vertex,
   .effectCont .theramy,
   .site__inner .web,
   .site__inner .detail,
@@ -1711,6 +1710,9 @@ circle.circle {
   .contactMe__cont .cont,
   .height__inner .quiz {
     font-size: 2vw;
+  }
+  #header.vertex {
+    font-size: 3vw;
   }
   .height__wrap {
     top: 52%;
