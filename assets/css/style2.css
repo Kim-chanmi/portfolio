@@ -1645,6 +1645,20 @@ circle.circle {
   .contactMe__list ul {
     height: 36vw;
   }
+  .introduce {
+    font-size: 1vw;
+  }
+
+  .rightBom {
+    display: none;
+  }
+  .rightTop {
+    width: 100%;
+  }
+
+  .rightTop__desc {
+    font-size: 1.2vw;
+  }
 }
 
 @media (max-width: 428px) {
