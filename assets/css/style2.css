@@ -1728,7 +1728,9 @@ circle.circle {
   .contactMe__list ul {
     height: 36vw;
   }
-  .introduce {
+  .introduce,
+  .effect,
+  .study {
     font-size: 2vw;
     width: 70%;
   }
@@ -1755,12 +1757,9 @@ circle.circle {
     font-size: 2vw;
     word-break: keep-all;
   }
-  .effect {
-    font-size: 2vw;
-    width: 70%;
-  }
   .effectCont .theramy {
     font-size: 5vw;
+    margin-top: 1.2vw;
   }
   .effectCont p {
     font-size: 2.8vw;
