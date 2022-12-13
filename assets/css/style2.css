@@ -1646,7 +1646,7 @@ circle.circle {
     height: 36vw;
   }
   .introduce {
-    font-size: 2vw;
+    font-size: 10vw;
   }
 
   .rightBom {
@@ -1657,7 +1657,7 @@ circle.circle {
   }
 
   .rightTop__desc {
-    font-size: 2vw;
+    font-size: 10vw;
   }
 }
 
