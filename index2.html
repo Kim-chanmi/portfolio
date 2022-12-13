@@ -1508,6 +1508,14 @@
       menu.addEventListener("click", () => {
         menuList.classList.toggle("show");
       });
+
+      // 클릭
+      const height = document.querySelector(".height em");
+      const heightQuiz = document.querySelector(".height__wrap");
+
+      height.addEventListener("click", () => {
+        heightQuiz.classList.toggle("show");
+      });
     </script>
     <script>
       gsap.registerPlugin(ScrollTrigger);

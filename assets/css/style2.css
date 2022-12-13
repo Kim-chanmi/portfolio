@@ -433,11 +433,30 @@ body {
   float: right;
 }
 
+.height em,
+.result {
+  cursor: pointer;
+}
+
+.height em {
+  transition: all 0.3s;
+}
+
+.result {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .height__wrap {
   /* width: 98%; */
   position: absolute;
   top: 43%;
   right: -3%;
+  display: none;
+  /* transition: all 0.3s; */
+}
+
+.height__wrap.show {
+  display: block;
 }
 
 .height__inner .quiz {
@@ -1707,6 +1726,9 @@ circle.circle {
     font-size: 2.8vw;
   }
   .study {
+    font-size: 2vw;
+  }
+  .studyList__inner .studyList {
     font-size: 2vw;
   }
 }
