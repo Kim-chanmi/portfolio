@@ -1682,6 +1682,7 @@ circle.circle {
   }
   .effect {
     font-size: 2vw;
+    width: 70%;
   }
   .effectCont .theramy {
     font-size: 3vw;
