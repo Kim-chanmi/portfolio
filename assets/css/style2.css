@@ -1647,6 +1647,7 @@ circle.circle {
   }
   .introduce {
     font-size: 2vw;
+    width: 70%;
   }
 
   .rightBom {
@@ -1688,7 +1689,7 @@ circle.circle {
     font-size: 5vw;
   }
   .effectCont p {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }
 
