@@ -608,28 +608,32 @@
                       <div class="quiz">
                         <pre><code class="language-js">const arr = [1, 1, 6, 6, 7, 7];
 
-  function solution(arr) {
-    return arr.filter((item, idx) => item !== arr[idx + 1]).join();
-  }
+function solution(arr) {
+  return arr.filter((item, idx) => item !== arr[idx + 1]).join();
+}
 
-  console.log(solution(arr));
-  </code></pre>
-                      </div>
-                      <div class="result">
-                        <details>
-                          <summary>결과보기</summary>
-                          <div class="sample01_result">
-                            <script>
-                              const arr = [1, 1, 6, 6, 7, 7];
-                              function solution(arr) {
-                                return arr
-                                  .filter((item, idx) => item !== arr[idx + 1])
-                                  .join("");
-                              }
-                              document.write(solution(arr));
-                            </script>
-                          </div>
-                        </details>
+console.log(solution(arr));
+</code></pre>
+                        <!-- <div>
+                          <span>const</span> <span>arr</span> = [1, 1, 6, 6, 7,
+                          7];
+                        </div>
+                        <div>
+                          <span>function</span>
+                          <span>solution</span>(<span>arr</span>) {
+                        </div>
+                        <div>
+                          &nbsp;&nbsp;&nbsp;<span>return</span>
+                          arr.filter((item, idx) => item !== arr[idx +
+                          1]).join();
+                        </div>
+                        <div>}</div>
+                        <div><span>solution</span>(arr)</div> -->
+                        <br />
+                        <div class="answer__inner">
+                          <div class="answer">정답보기</div>
+                          <div class="result">167</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1496,7 +1500,7 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <script src="assets/js/highlight.min.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
     </script>
@@ -1504,9 +1508,22 @@
       // 헤더 메뉴 클릭
       const menu = document.querySelector(".vertex.menu");
       const menuList = document.querySelector(".vertex ul");
+      const answer = document.querySelector(".answer");
+      const result = document.querySelector(".result");
 
       menu.addEventListener("click", () => {
         menuList.classList.toggle("show");
+      });
+
+      answer.addEventListener("click", () => {
+        answer.style.display = "none";
+        result.classList.toggle("show");
+        result.style.transition = "all 0.3s";
+      });
+
+      result.addEventListener("click", () => {
+        result.classList.toggle("show");
+        answer.style.display = "block";
       });
 
       // 클릭

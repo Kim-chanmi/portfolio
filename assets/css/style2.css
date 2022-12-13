@@ -328,7 +328,7 @@ body {
   padding: 0 1.6vw;
   border-right: 0.1vw dashed #fff;
   border-left: 0.1vw dashed #fff;
-  position: relative;
+  /* position: relative; */
 }
 
 .about__center::before {
@@ -435,8 +435,22 @@ body {
 }
 
 .height em,
+.answer,
 .result {
   cursor: pointer;
+}
+
+.answer,
+.result {
+  color: #fff;
+  border-radius: 50px;
+  background-color: #282936;
+  padding: 0.6vw 1vw;
+  font-size: 1vw;
+}
+
+.answer__inner {
+  display: inline-block;
 }
 
 /* .height em {
@@ -444,34 +458,50 @@ body {
 } */
 
 .result {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.height__wrap {
-  /* width: 98%; */
-  position: absolute;
-  top: 43%;
-  right: -3%;
-  transition: all 3s;
-}
-.height__inner {
+  /* background-color: rgba(0, 0, 0, 0.8); */
   display: none;
 }
-
-.height__inner.show {
+.result.show {
   display: block;
 }
 
-pre code.hljs {
-  /* background-color: rgba(0, 0, 0, 0.2); */
-  /* background: #00000010; */
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(50px);
+.height__wrap {
+  width: 100%;
+  position: absolute;
+  top: 68%;
+  right: -50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+}
+
+.height__inner {
+  /* width: 100%; */
+  opacity: 0;
+}
+
+.height__inner.show {
+  opacity: 1;
 }
 
 .height__inner .quiz {
+  width: 100%;
   text-transform: none;
+  font-size: 1.1vw;
 }
+
+/* pre code.hljs {
+  overflow-x: hidden;
+  overflow-y: auto;
+} */
+
+/* .height__inner .quiz span {
+  color: #702c2b;
+}
+
+.height__inner .quiz span:nth-child(2),
+.height__inner .quiz span:nth-child(5) {
+  color: #c56869;
+} */
 
 /* 애니메이션1 */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
@@ -1593,8 +1623,8 @@ circle.circle {
 
   .horizontalSection {
     width: 100%;
-    flex-direction: column;
     height: 100%;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 
@@ -1670,17 +1700,26 @@ circle.circle {
 } */
 
 @media (max-width: 510px) {
-  #header.vertex {
+  #header.vertex,
+  .effectCont .theramy,
+  .site__inner .web,
+  .site__inner .detail,
+  .detail__desc p,
+  .study,
+  .studyList__inner .studyList,
+  .contactMe__list ul,
+  .contactMe__cont .cont,
+  .height__inner .quiz {
     font-size: 2vw;
+  }
+  .height__wrap {
+    top: 52%;
   }
   .effectCont__wrap {
     margin-top: 60vw;
   }
   .effectCont {
     width: 100%;
-  }
-  .effectCont .theramy {
-    margin-top: 2vw;
   }
   .contTit,
   .contDesc {
@@ -1707,9 +1746,6 @@ circle.circle {
   .site__inner {
     padding: 12vw 10vw;
   }
-  .site__inner .web {
-    font-size: 2vw;
-  }
 
   .site__inner h2 {
     font-size: 4vw;
@@ -1718,12 +1754,6 @@ circle.circle {
   .site__inner p {
     font-size: 2vw;
     word-break: keep-all;
-  }
-  .site__inner .detail {
-    font-size: 2vw;
-  }
-  .detail__desc p {
-    font-size: 2vw;
   }
   .effect {
     font-size: 2vw;
@@ -1734,18 +1764,6 @@ circle.circle {
   }
   .effectCont p {
     font-size: 2.8vw;
-  }
-  .study {
-    font-size: 2vw;
-  }
-  .studyList__inner .studyList {
-    font-size: 2vw;
-  }
-  .contactMe__list ul {
-    font-size: 2vw;
-  }
-  .contactMe__cont .cont {
-    font-size: 2vw;
   }
 }
 
