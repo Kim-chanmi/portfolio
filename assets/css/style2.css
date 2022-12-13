@@ -1629,6 +1629,9 @@ circle.circle {
 } */
 
 @media (max-width: 510px) {
+  #header {
+    font-size: 2vw;
+  }
   .effectCont__wrap {
     margin-top: 60vw;
   }
