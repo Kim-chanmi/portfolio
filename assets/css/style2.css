@@ -1671,7 +1671,8 @@ circle.circle {
   }
 
   .site__inner p {
-    font-size: 1.4vw;
+    font-size: 2vw;
+    word-break: keep-all;
   }
   .site__inner .detail {
     font-size: 2vw;
