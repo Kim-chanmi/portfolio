@@ -1659,7 +1659,9 @@ circle.circle {
   .rightTop__desc {
     font-size: 2.4vw;
   }
-
+  .site__inner {
+    padding: 12vw 10vw;
+  }
   .site__inner .web {
     font-size: 2vw;
   }
