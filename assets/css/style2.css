@@ -1680,6 +1680,15 @@ circle.circle {
   .detail__desc p {
     font-size: 2vw;
   }
+  .effect {
+    font-size: 2vw;
+  }
+  .effectCont .theramy {
+    font-size: 3vw;
+  }
+  .effectCont p {
+    font-size: 2vw;
+  }
 }
 
 @media (max-width: 428px) {
