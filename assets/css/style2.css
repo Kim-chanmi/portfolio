@@ -399,6 +399,7 @@ body {
   height: 39.13vw;
   text-transform: uppercase;
   position: relative;
+  /* transition: all 0.3s; */
 }
 
 .rightTop_title {
@@ -438,9 +439,9 @@ body {
   cursor: pointer;
 }
 
-.height em {
+/* .height em {
   transition: all 0.3s;
-}
+} */
 
 .result {
   background-color: rgba(0, 0, 0, 0.8);
@@ -451,12 +452,21 @@ body {
   position: absolute;
   top: 43%;
   right: -3%;
+  transition: all 3s;
+}
+.height__inner {
   display: none;
-  /* transition: all 0.3s; */
 }
 
-.height__wrap.show {
+.height__inner.show {
   display: block;
+}
+
+pre code.hljs {
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  /* background: #00000010; */
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
 }
 
 .height__inner .quiz {
@@ -1360,7 +1370,7 @@ circle.circle {
 .contactMe__cont {
   width: 35%;
   padding: 2vw 0 2vw 2vw;
-  border-bottom: 1px dashed #000;
+  border-bottom: 0.1vw dashed #000;
 }
 
 .contactMe__cont .contTit {
@@ -1729,6 +1739,12 @@ circle.circle {
     font-size: 2vw;
   }
   .studyList__inner .studyList {
+    font-size: 2vw;
+  }
+  .contactMe__list ul {
+    font-size: 2vw;
+  }
+  .contactMe__cont .cont {
     font-size: 2vw;
   }
 }
