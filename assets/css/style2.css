@@ -1775,6 +1775,7 @@ circle.circle {
   }
   .height__inner .quiz {
     background-color: #282936;
+    padding: 1vw;
   }
   .vertex2 .arrow {
     display: none;
