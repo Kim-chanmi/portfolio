@@ -1925,7 +1925,7 @@ circle.circle {
   }
 
   .detail__desc h2 {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .detail__desc p {
@@ -1946,6 +1946,10 @@ circle.circle {
     padding: 12vw 10vw;
   }
 
+  .effectCont__inner {
+    padding: 0;
+  }
+
   .effectCont .theramy {
     font-size: 20px;
     margin-top: 3vw;
@@ -1955,6 +1959,10 @@ circle.circle {
   }
   .studyList__wrap {
     margin-top: 60vw;
+  }
+
+  .studyList__inner {
+    justify-content: center;
   }
 
   .studyList__inner .studyList {
