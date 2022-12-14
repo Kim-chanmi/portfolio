@@ -1817,15 +1817,15 @@ circle.circle {
   }
 
   .sec2__title {
-    font-size: 40px;
+    font-size: 30px;
   }
   .sec2__title em {
-    font-size: 56px;
+    font-size: 44px;
   }
 
   .sec2__title span {
     font-size: 14px;
-    vertical-align: 7vw;
+    vertical-align: 4vw;
   }
 
   .introduce,
@@ -1833,6 +1833,10 @@ circle.circle {
   .study {
     font-size: 14px;
     width: 100%;
+  }
+
+  .about__center {
+    margin-top: 30vw;
   }
 
   .height__wrap {
