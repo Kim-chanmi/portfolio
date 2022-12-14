@@ -1822,7 +1822,7 @@ circle.circle {
   .height__inner .quiz,
   .answer,
   .result {
-    font-size: 2vw;
+    font-size: 18px;
   }
   #header,
   #header h1 {
