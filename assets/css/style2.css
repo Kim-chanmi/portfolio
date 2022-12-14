@@ -1773,8 +1773,11 @@ circle.circle {
   .effectCont p {
     font-size: 2.8vw;
   }
-  pre code {
+  .height__inner .quiz {
     background-color: #282936;
+  }
+  .vertex2 .arrow {
+    display: none;
   }
 }
 
