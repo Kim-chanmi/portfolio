@@ -1811,9 +1811,12 @@ circle.circle {
 } */
 
 @media (max-width: 510px) {
+  #header {
+    height: 40px;
+  }
   #header,
   #header h1 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .sec2__title {
@@ -1837,6 +1840,7 @@ circle.circle {
 
   .aboutMe__inner {
     margin-top: 30vw;
+    width: 100%;
   }
 
   .height__wrap {
