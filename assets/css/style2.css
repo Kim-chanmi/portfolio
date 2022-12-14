@@ -1708,7 +1708,9 @@ circle.circle {
   .studyList__inner .studyList,
   .contactMe__list ul,
   .contactMe__cont .cont,
-  .height__inner .quiz {
+  .height__inner .quiz,
+  .answer,
+  .result {
     font-size: 2vw;
   }
   #header.vertex {
@@ -1734,7 +1736,7 @@ circle.circle {
   .effect,
   .study {
     font-size: 2vw;
-    width: 70%;
+    width: 80%;
   }
 
   .rightBom {
