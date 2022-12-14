@@ -1818,8 +1818,9 @@ circle.circle {
   .result {
     font-size: 2vw;
   }
-  #header.vertex {
-    font-size: 3vw;
+  #header,
+  #header h1 {
+    font-size: 18px;
   }
   .height__wrap {
     top: 55%;
