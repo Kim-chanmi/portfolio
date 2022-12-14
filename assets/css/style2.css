@@ -31,6 +31,9 @@ body {
   color: #fff;
   padding: 0 2vw;
   position: relative;
+  position: absolute;
+  top: 1vw;
+  left: 2vw;
 }
 
 #header h1 a {
@@ -1790,6 +1793,9 @@ circle.circle {
     max-width: 100%;
     overflow-x: hidden;
     position: relative;
+  }
+  .title__inner > div {
+    font-size: 50px;
   }
 }
 /* 
