@@ -1176,7 +1176,7 @@ circle.circle {
 }
 
 .detail__desc .viewSite {
-  width: 15vw;
+  /* width: 15vw; */
   font-size: 1vw;
   display: inline-block;
   margin: auto;
@@ -1776,6 +1776,12 @@ circle.circle {
   }
 }
 
+@media (max-width: 590px) {
+  .studyList__wrap {
+    margin-top: 30vw;
+  }
+}
+
 @media (max-width: 550px) {
   /* .studyList__wrap {
     margin-top: 40vw;
@@ -1796,6 +1802,9 @@ circle.circle {
   }
   .title__inner > div {
     font-size: 50px;
+  }
+  .studyList__wrap {
+    margin-top: 40vw;
   }
 }
 /* 
@@ -1819,10 +1828,15 @@ circle.circle {
     font-size: 20px;
   }
 
-  .sec2__title {
+  .sec2__title,
+  .sec4__title,
+  .sec5__title {
     font-size: 36px;
   }
-  .sec2__title em {
+
+  .sec2__title em,
+  .sec4__title em,
+  .sec5__title em {
     font-size: 50px;
   }
 
@@ -1836,6 +1850,11 @@ circle.circle {
   .study {
     font-size: 14px;
     width: 100%;
+  }
+  .effect,
+  .study {
+    text-align: justify;
+    padding-bottom: 10px;
   }
 
   .aboutMe__inner {
@@ -1874,6 +1893,7 @@ circle.circle {
   }
   .sec3__title {
     font-size: 36px;
+    padding: 70vw 0;
   }
   .sec3__title em {
     font-size: 50px;
@@ -1903,27 +1923,49 @@ circle.circle {
     font-size: 10px;
   }
 
+  .detail__desc h2 {
+    font-size: 14px;
+  }
+
+  .detail__desc p {
+    font-size: 10px;
+  }
+
+  .detail__desc .viewSite {
+    font-size: 10px;
+  }
+
   .effectCont__wrap {
-    margin-top: 60vw;
+    margin-top: 80vw;
   }
   .effectCont {
     width: 100%;
-  }
-  .contTit,
-  .contDesc {
-    display: none;
   }
   .site__inner {
     padding: 12vw 10vw;
   }
 
   .effectCont .theramy {
-    font-size: 5vw;
-    margin-top: 1.2vw;
+    font-size: 20px;
+    margin-top: 3vw;
   }
   .effectCont p {
-    font-size: 2.8vw;
+    font-size: 13px;
   }
+  .studyList__wrap {
+    margin-top: 60vw;
+  }
+
+  .studyList__inner .studyList {
+    font-size: 14px;
+  }
+  .sec6__title em {
+    font-size: 38px;
+  }
+  .sec6__title {
+    font-size: 28px;
+  }
+
   .height__inner .quiz {
     background-color: #282936;
     padding: 1vw;
@@ -1931,14 +1973,35 @@ circle.circle {
   .vertex2 .arrow {
     display: none;
   }
+  .contactMe__list {
+    display: none;
+  }
+  .contactMe__cont .contTit {
+    font-size: 14px;
+  }
+  .contactMe__cont {
+    width: 100%;
+  }
+  .contactMe__cont .cont,
+  .contactMe__cont .contDesc {
+    font-size: 14px;
+    word-break: keep-all;
+  }
+  .contactMe__ment {
+    width: 75%;
+    font-size: 30px;
+  }
+  .contactMe__ani {
+    width: 25%;
+  }
 }
 
 @media (max-width: 428px) {
   .studyList__wrap {
-    margin-top: 60vw;
+    margin-top: 90vw;
   }
   .studyList__inner .studyList {
     width: 48%;
-    height: 16vw;
+    height: 20vw;
   }
 }
