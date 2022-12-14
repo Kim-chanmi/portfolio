@@ -1811,23 +1811,30 @@ circle.circle {
 } */
 
 @media (max-width: 510px) {
-  .effectCont .theramy,
-  .site__inner .web,
-  .site__inner .detail,
-  .detail__desc p,
-  .study,
-  .studyList__inner .studyList,
-  .contactMe__list ul,
-  .contactMe__cont .cont,
-  .height__inner .quiz,
-  .answer,
-  .result {
-    font-size: 18px;
-  }
   #header,
   #header h1 {
     font-size: 18px;
   }
+
+  .sec2__title {
+    font-size: 40px;
+  }
+  .sec2__title em {
+    font-size: 56px;
+  }
+
+  .sec2__title span {
+    font-size: 14px;
+    vertical-align: 7vw;
+  }
+
+  .introduce,
+  .effect,
+  .study {
+    font-size: 14px;
+    width: 100%;
+  }
+
   .height__wrap {
     top: 55%;
   }
@@ -1847,12 +1854,6 @@ circle.circle {
   }
   .contactMe__list ul {
     height: 36vw;
-  }
-  .introduce,
-  .effect,
-  .study {
-    font-size: 2vw;
-    width: 80%;
   }
 
   .rightBom {
