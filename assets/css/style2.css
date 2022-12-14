@@ -1773,7 +1773,7 @@ circle.circle {
   .effectCont p {
     font-size: 2.8vw;
   }
-  pre code.language-js {
+  pre code {
     background-color: #282936;
   }
 }
