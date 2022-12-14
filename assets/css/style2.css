@@ -1720,6 +1720,10 @@ circle.circle {
   .height__wrap {
     top: 52%;
   }
+  .answer,
+  .result {
+    padding: 1vw 2.2vw;
+  }
   .effectCont__wrap {
     margin-top: 60vw;
   }
