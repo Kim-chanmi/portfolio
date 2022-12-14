@@ -1751,9 +1751,9 @@ circle.circle {
     height: 50vh;
   }
 
-  .studyList__wrap {
+  /* .studyList__wrap {
     margin-top: 30vw;
-  }
+  } */
 
   .studyList__inner {
     width: 100%;
@@ -1774,9 +1774,9 @@ circle.circle {
 }
 
 @media (max-width: 550px) {
-  .studyList__wrap {
+  /* .studyList__wrap {
     margin-top: 40vw;
-  }
+  } */
   .effectCont:nth-child(2),
   .effectCont:nth-child(5),
   .effectCont:nth-child(8) {
