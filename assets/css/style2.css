@@ -1311,7 +1311,7 @@ circle.circle {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  gap: 1vw;
+  gap: 1.2vw;
 }
 
 .studyList__inner .studyList {
