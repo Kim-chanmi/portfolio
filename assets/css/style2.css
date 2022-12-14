@@ -1820,15 +1820,15 @@ circle.circle {
   }
 
   .sec2__title {
-    font-size: 30px;
+    font-size: 36px;
   }
   .sec2__title em {
-    font-size: 44px;
+    font-size: 50px;
   }
 
   .sec2__title span {
     font-size: 14px;
-    vertical-align: 4vw;
+    vertical-align: 7vw;
   }
 
   .introduce,
@@ -1842,6 +1842,28 @@ circle.circle {
     margin-top: 30vw;
     width: 100%;
   }
+  .rightTop {
+    width: 100%;
+  }
+  .rightTop_title {
+    font-size: 14px;
+  }
+  .rightTop__desc {
+    font-size: 14px;
+  }
+
+  .name,
+  .age,
+  .height,
+  .address,
+  .mbti,
+  .certification {
+    padding-top: 3vw;
+    padding-bottom: 1vw;
+  }
+  .rightBom {
+    display: none;
+  }
 
   .height__wrap {
     top: 55%;
@@ -1850,6 +1872,37 @@ circle.circle {
   .result {
     padding: 1vw 2.2vw;
   }
+  .sec3__title {
+    font-size: 36px;
+  }
+  .sec3__title em {
+    font-size: 50px;
+  }
+  .sec3__title .subtitle {
+    font-size: 14px;
+  }
+
+  .site__inner .web {
+    font-size: 10px;
+  }
+
+  .site__inner h2 {
+    font-size: 18px;
+  }
+
+  .site__inner p {
+    font-size: 10px;
+    word-break: keep-all;
+  }
+
+  .site__inner p br {
+    display: none;
+  }
+
+  .site__inner .detail {
+    font-size: 10px;
+  }
+
   .effectCont__wrap {
     margin-top: 60vw;
   }
@@ -1860,32 +1913,10 @@ circle.circle {
   .contDesc {
     display: none;
   }
-  .contactMe__list ul {
-    height: 36vw;
-  }
-
-  .rightBom {
-    display: none;
-  }
-  .rightTop {
-    width: 100%;
-  }
-
-  .rightTop__desc {
-    font-size: 2.4vw;
-  }
   .site__inner {
     padding: 12vw 10vw;
   }
 
-  .site__inner h2 {
-    font-size: 4vw;
-  }
-
-  .site__inner p {
-    font-size: 2vw;
-    word-break: keep-all;
-  }
   .effectCont .theramy {
     font-size: 5vw;
     margin-top: 1.2vw;
