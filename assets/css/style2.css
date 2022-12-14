@@ -1518,12 +1518,13 @@ circle.circle {
   #header {
     padding-top: 2.2vw;
   }
-  #section1 {
-    /* height: 100%; */
-    padding-top: 10vw;
+
+  .title__inner > div {
+    font-size: 8vw;
   }
-  .title__inner > div.tit6 {
-    margin-bottom: 10vw;
+
+  .title__inner > div.tit3 {
+    margin-bottom: 12vw;
   }
   .sec2__top {
     height: 50vh;
