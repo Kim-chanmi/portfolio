@@ -2169,6 +2169,11 @@ circle.circle {
     font-size: 14px;
   }
 
+  .site__inner {
+    padding: 20vw 10vw;
+    height: 40vh;
+  }
+
   .site__inner .web {
     font-size: 10px;
   }
@@ -2207,9 +2212,6 @@ circle.circle {
   }
   .effectCont {
     width: 100%;
-  }
-  .site__inner {
-    padding: 12vw 10vw;
   }
 
   .effectCont__inner {
