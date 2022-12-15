@@ -16,12 +16,9 @@
     <link rel="stylesheet" href="assets/css/style2.css" />
   </head>
   <body>
-    <div class="loading__wrap">
-      <div class="loading-container">
-        <div class="loading"></div>
-        <div id="loading-text">loading</div>
-      </div>
-    </div>
+    <div class="progress poppins"><span class="progress-text">0</span></div>
+    <!-- 로딩 -->
+
     <div id="skip">
       <a href="#section1">메인 영역 바로가기</a>
       <a href="#section2">ABOUT ME 바로가기</a>
@@ -646,6 +643,7 @@ console.log(solution(arr));
         </div>
       </section>
       <!-- //section2 -->
+
       <section id="section3" class="sec3 black">
         <div class="sec3__inner">
           <div class="sec3-1 sec3__title">
@@ -949,6 +947,7 @@ console.log(solution(arr));
         </div>
       </section>
       <!-- //section3 -->
+
       <section id="section4" class="sec4 white score">
         <div class="sec4__inner">
           <div class="sec4__title">
@@ -1089,6 +1088,7 @@ console.log(solution(arr));
         </div>
       </section>
       <!-- //section4 -->
+
       <section id="section5" class="sec5 white score">
         <div class="sec5__inner">
           <div class="sec5__title">
@@ -1243,6 +1243,7 @@ console.log(solution(arr));
         </div>
       </section>
       <!-- //section5 -->
+
       <section id="section6" class="sec6 white score">
         <div class="sec6__inner">
           <div class="sec6__title">
@@ -1489,6 +1490,14 @@ console.log(solution(arr));
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="../assets/js/highlight.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+      integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
     <script>
       // 새로고침 했을 때 스크롤을 맨 위로 올리는 법
@@ -1499,20 +1508,116 @@ console.log(solution(arr));
       };
 
       // 로딩
-      const loader = document.querySelector(".loading__wrap");
-      document.body.style.overflow = "hidden"; //로딩 중 스크롤 방지
-      document.body.style.height = "100vh";
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          //로딩속도 구현
-          loader.style.opacity = "0";
-          document.body.style.overflow = "none"; //스크롤 방지 해제
-          document.body.style.height = "auto";
-          setTimeout(() => {
-            loader.style.display = "none";
-          }, 400);
-        }, 5000);
-      });
+      function loading() {
+        console.log("loading");
+        let progress = $(".progress"),
+          progressText = progress.find(".progress-text"),
+          imgLoad = imagesLoaded("body"),
+          imgTotal = imgLoad.images.length,
+          imgLoaded = 0,
+          imgCurrent = 0,
+          progressTimer = setInterval(updateProgress, 1000 / 60);
+
+        imgLoad.on("progress", function () {
+          imgLoaded++;
+        });
+
+        function updateProgress() {
+          let target = (imgLoaded / imgTotal) * 100;
+
+          imgCurrent += (target - imgCurrent) * 0.1;
+          progressText.text(Math.floor(imgCurrent) + "%");
+
+          if (imgCurrent >= 100) {
+            clearInterval(progressTimer);
+            progress.delay(1000).animate(
+              {
+                top: "-130%",
+              },
+              400
+            );
+
+            $("body").addClass("show");
+
+            let tl = gsap.timeline();
+            tl.to(".tit3 span", {
+              duration: 0.4,
+              stagger: 0.03,
+              x: 0,
+              y: 0,
+              opacity: 1,
+              ease: Power4.easeInOut,
+            });
+            tl.to(".tit6 span", {
+              duration: 0.4,
+              stagger: 0.03,
+              x: 0,
+              y: 0,
+              opacity: 1,
+              ease: Power4.easeInOut,
+            });
+            tl.to("#canvas", { duration: 1, opacity: 1, delay: 1 }, "b");
+            tl.to(
+              ".tit3",
+              { duration: 0.8, paddingTop: "1vw", ease: Power1.easeInOut },
+              "b"
+            );
+            tl.to(
+              ".tit6",
+              { duration: 0.8, y: 0, ease: Power1.easeInOut },
+              "b"
+            );
+            tl.to(
+              ".tit4",
+              {
+                duration: 1,
+                opacity: 1,
+                marginLeft: "-40vw",
+                ease: Power4.easeInOut,
+              },
+              "a"
+            );
+            tl.to(
+              ".tit5",
+              {
+                duration: 1,
+                opacity: 1,
+                marginLeft: "40vw",
+                ease: Power4.easeInOut,
+              },
+              "a"
+            );
+            tl.to(
+              ".tit1",
+              {
+                duration: 1,
+                opacity: 1,
+                marginLeft: "-20vw",
+                ease: Power4.easeInOut,
+              },
+              "a"
+            );
+            tl.to(
+              ".tit2",
+              {
+                duration: 1,
+                opacity: 1,
+                marginLeft: "40vw",
+                ease: Power4.easeInOut,
+              },
+              "a"
+            );
+            tl.to("#header", { duration: 1, top: 0, ease: Power4.easeInOut });
+          }
+
+          if (imgCurrent > 99) {
+            imgCurrent = 100;
+          }
+        }
+      }
+      loading();
+
+      gsap.registerPlugin(ScrollTrigger);
 
       // 헤더 메뉴 클릭
       const menu = document.querySelector(".vertex.menu");
@@ -1586,80 +1691,80 @@ console.log(solution(arr));
       });
 
       // 로딩
-      setTimeout(() => {
-        let tl = gsap.timeline();
-        tl.to(".tit3 span", {
-          duration: 0.4,
-          stagger: 0.03,
-          x: 0,
-          y: 0,
-          opacity: 1,
-          ease: Power4.easeInOut,
-        });
-        tl.to(".tit6 span", {
-          duration: 0.4,
-          stagger: 0.03,
-          x: 0,
-          y: 0,
-          opacity: 1,
-          ease: Power4.easeInOut,
-        });
-        tl.to("#canvas", { duration: 1, opacity: 1, delay: 1 }, "b");
-        tl.to(
-          ".tit3",
-          { duration: 0.8, paddingTop: "1vw", ease: Power1.easeInOut },
-          "b"
-        );
-        tl.to(".tit6", { duration: 0.8, y: 0, ease: Power1.easeInOut }, "b");
-        tl.to(
-          ".tit4",
-          {
-            duration: 1,
-            opacity: 1,
-            marginLeft: "-40vw",
-            ease: Power4.easeInOut,
-          },
-          "a"
-        );
-        tl.to(
-          ".tit5",
-          {
-            duration: 1,
-            opacity: 1,
-            marginLeft: "40vw",
-            ease: Power4.easeInOut,
-          },
-          "a"
-        );
-        tl.to(
-          ".tit1",
-          {
-            duration: 1,
-            opacity: 1,
-            marginLeft: "-20vw",
-            ease: Power4.easeInOut,
-          },
-          "a"
-        );
-        tl.to(
-          ".tit2",
-          {
-            duration: 1,
-            opacity: 1,
-            marginLeft: "40vw",
-            ease: Power4.easeInOut,
-          },
-          "a"
-        );
-        tl.to("#header", { duration: 1, top: 0, ease: Power4.easeInOut });
-      }, 2000);
+      // setTimeout(() => {
+      // let tl = gsap.timeline();
+      // tl.to(".tit3 span", {
+      //   duration: 0.4,
+      //   stagger: 0.03,
+      //   x: 0,
+      //   y: 0,
+      //   opacity: 1,
+      //   ease: Power4.easeInOut,
+      // });
+      // tl.to(".tit6 span", {
+      //   duration: 0.4,
+      //   stagger: 0.03,
+      //   x: 0,
+      //   y: 0,
+      //   opacity: 1,
+      //   ease: Power4.easeInOut,
+      // });
+      // tl.to("#canvas", { duration: 1, opacity: 1, delay: 1 }, "b");
+      // tl.to(
+      //   ".tit3",
+      //   { duration: 0.8, paddingTop: "1vw", ease: Power1.easeInOut },
+      //   "b"
+      // );
+      // tl.to(".tit6", { duration: 0.8, y: 0, ease: Power1.easeInOut }, "b");
+      // tl.to(
+      //   ".tit4",
+      //   {
+      //     duration: 1,
+      //     opacity: 1,
+      //     marginLeft: "-40vw",
+      //     ease: Power4.easeInOut,
+      //   },
+      //   "a"
+      // );
+      // tl.to(
+      //   ".tit5",
+      //   {
+      //     duration: 1,
+      //     opacity: 1,
+      //     marginLeft: "40vw",
+      //     ease: Power4.easeInOut,
+      //   },
+      //   "a"
+      // );
+      // tl.to(
+      //   ".tit1",
+      //   {
+      //     duration: 1,
+      //     opacity: 1,
+      //     marginLeft: "-20vw",
+      //     ease: Power4.easeInOut,
+      //   },
+      //   "a"
+      // );
+      // tl.to(
+      //   ".tit2",
+      //   {
+      //     duration: 1,
+      //     opacity: 1,
+      //     marginLeft: "40vw",
+      //     ease: Power4.easeInOut,
+      //   },
+      //   "a"
+      // );
+      // tl.to("#header", { duration: 1, top: 0, ease: Power4.easeInOut });
+      // }, 2000);
 
       // 가로모드
 
       const sections = gsap.utils.toArray(".sec3-1"); // 다중이 == querySelectorAll
 
       ScrollTrigger.matchMedia({
-        "(min-width: 700px)": function () {
+        "(min-width: 1000px)": function () {
           gsap.to(sections, {
             xPercent: -100 * (sections.length - 1),
             ease: "none",
