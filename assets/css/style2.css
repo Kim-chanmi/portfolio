@@ -2,8 +2,13 @@
 @import url(common.css);
 @import url(fonts.css);
 
+html,
 body {
-  overflow-x: hidden;
+  overflow: hidden;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* loading */
