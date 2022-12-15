@@ -214,9 +214,9 @@ body {
 }
 .loading-container,
 .loading {
-  height: 100px;
+  height: 200px;
   position: relative;
-  width: 100px;
+  width: 200px;
   border-radius: 100%;
   /* position: absolute;
   top: 50%;
@@ -260,14 +260,15 @@ body {
   animation: loading-text-opacity 2s linear 0s infinite normal;
   color: #ffffff;
   font-family: "Helvetica Neue, " Helvetica ", " "arial";
-  font-size: 10px;
+  font-size: 20px;
   font-weight: bold;
   margin-top: 45px;
   opacity: 0;
   position: absolute;
   text-align: center;
   text-transform: uppercase;
-  top: 0;
+  top: 20%;
+  left: 23%;
   width: 100px;
 }
 
