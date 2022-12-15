@@ -2008,15 +2008,16 @@ circle.circle {
   }
 
   .detail__desc h2 {
-    font-size: 12px;
+    font-size: 16px;
+    margin-bottom: 0;
   }
 
   .detail__desc p {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .detail__desc .viewSite {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .effectCont__wrap {
