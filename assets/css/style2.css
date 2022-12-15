@@ -1978,7 +1978,7 @@ circle.circle {
   }
 
   .site__inner {
-    padding: 0;
+    padding: 0 3vw;
     height: 40vh;
   }
 
