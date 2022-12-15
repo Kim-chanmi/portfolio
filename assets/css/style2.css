@@ -1993,7 +1993,6 @@ circle.circle {
   .site__inner p {
     font-size: 14px;
     word-break: keep-all;
-    white-space: pre-line;
   }
 
   .site__inner p br {
@@ -2004,13 +2003,22 @@ circle.circle {
     font-size: 14px;
   }
 
+  .detail__img {
+    width: 0;
+  }
+
+  .detail__desc {
+    width: 100%;
+  }
+
   .detail__desc h2 {
-    font-size: 16px;
-    margin-bottom: 0;
+    font-size: 20px;
+    margin-bottom: 1vw;
   }
 
   .detail__desc p {
     font-size: 14px;
+    margin-bottom: 2vw;
   }
 
   .detail__desc .viewSite {
