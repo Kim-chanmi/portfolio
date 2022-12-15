@@ -1109,6 +1109,10 @@ circle.circle {
   position: relative;
   border: 0.1vw solid #fff;
   padding: 12vw 22vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.94);
   font-size: 1.1vw;
 }
@@ -1977,21 +1981,22 @@ circle.circle {
   }
 
   .site__inner {
-    padding: 20vw 20vw;
+    padding: 0;
     height: 40vh;
   }
 
   .site__inner .web {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .site__inner h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .site__inner p {
-    font-size: 10px;
+    font-size: 14px;
     word-break: keep-all;
+    white-space: pre-line;
   }
 
   .site__inner p br {
@@ -1999,7 +2004,7 @@ circle.circle {
   }
 
   .site__inner .detail {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .detail__desc h2 {
