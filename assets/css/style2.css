@@ -1897,6 +1897,10 @@ circle.circle {
     font-size: 24px;
   }
 
+  .vertex ul li a {
+    font-size: 12px;
+  }
+
   .sec2__title,
   .sec4__title,
   .sec5__title {
