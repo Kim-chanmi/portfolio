@@ -1890,7 +1890,7 @@ circle.circle {
 
 @media (max-width: 510px) {
   #header {
-    height: 40px;
+    height: 46px;
   }
   #header,
   #header h1 {
@@ -1973,7 +1973,7 @@ circle.circle {
   }
 
   .site__inner {
-    padding: 20vw 17vw;
+    padding: 20vw 20vw;
     height: 40vh;
   }
 
@@ -2014,11 +2014,12 @@ circle.circle {
     margin-top: 80vw;
   }
   .effectCont {
-    width: 100%;
+    width: 90%;
   }
 
   .effectCont__inner {
     padding: 0;
+    justify-content: center;
   }
 
   .effectCont .theramy {
