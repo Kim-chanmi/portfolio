@@ -5,7 +5,6 @@
 html,
 body {
   max-width: 100%;
-  overflow: hidden;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -16,7 +15,7 @@ body {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 100002;
+  z-index: 10000;
   width: 100%;
   height: 100vh;
   background-color: #000;
@@ -41,7 +40,7 @@ body {
   position: fixed;
   left: 0;
   top: -20vw;
-  width: 100vw;
+  width: 100%;
   /* height: 4vw; */
   padding: 1.4vw 2.2vw;
   display: flex;
@@ -1732,12 +1731,6 @@ circle.circle {
   }
   .contactMe__list ul {
     height: 32vw;
-  }
-  html,
-  body {
-    max-width: 100%;
-    overflow-x: hidden;
-    position: relative;
   }
   .title__inner > div {
     font-size: 50px;
