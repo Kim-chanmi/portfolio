@@ -1381,9 +1381,6 @@ circle.circle {
   color: #fff;
 }
 
-/* .vertex2 {
-  position: relative;
-} */
 .vertex2 span {
   position: absolute;
   display: inline-block;
