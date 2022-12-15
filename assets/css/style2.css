@@ -2026,6 +2026,16 @@ circle.circle {
     justify-content: center;
   }
 
+  .effectCont:nth-child(2),
+  .effectCont:nth-child(5),
+  .effectCont:nth-child(8) {
+    margin-top: 0;
+  }
+
+  .effectCont {
+    padding-bottom: 30vw;
+  }
+
   .effectCont .theramy {
     font-size: 20px;
     margin-top: 3vw;
