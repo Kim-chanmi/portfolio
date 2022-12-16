@@ -3,7 +3,7 @@
 @import url(fonts.css);
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 /* loading */
