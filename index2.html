@@ -1575,22 +1575,9 @@
       // 헤더 메뉴 클릭
       const menu = document.querySelector(".vertex.menu");
       const menuList = document.querySelector(".vertex ul");
-      const answer = document.querySelector(".answer");
-      const result = document.querySelector(".result");
 
       menu.addEventListener("click", () => {
         menuList.classList.toggle("show");
-      });
-
-      answer.addEventListener("click", () => {
-        answer.style.display = "none";
-        result.classList.toggle("show");
-        result.style.transition = "all 0.3s";
-      });
-
-      result.addEventListener("click", () => {
-        result.classList.toggle("show");
-        answer.style.display = "block";
       });
 
       // // 클릭
