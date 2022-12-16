@@ -213,6 +213,7 @@ main {
 #section1 {
   width: 100%;
   overflow: hidden;
+  box-sizing: border-box;
   height: 100vh;
   position: relative;
   border-bottom: 0.1vw dotted #666;
@@ -230,6 +231,11 @@ main {
   opacity: 0;
   user-select: none;
   pointer-events: none;
+}
+
+.title__inner {
+  width: 100%;
+  overflow: hidden;
 }
 
 .title__inner > div {
