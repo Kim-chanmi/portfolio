@@ -2,7 +2,7 @@
 @import url(common.css);
 @import url(fonts.css);
 
-/* html,
+html,
 body {
   width: 100%;
 }
@@ -10,7 +10,7 @@ body {
 body {
   overflow-x: hidden;
   position: relative;
-} */
+}
 
 /* html,
 body {
