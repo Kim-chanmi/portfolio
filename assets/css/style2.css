@@ -15,6 +15,10 @@ body {
   box-sizing: border-box;
 }
 
+main {
+  border-bottom: 1vw solid #fe451c;
+}
+
 /* html,
 body {
   max-width: 100%;
@@ -49,8 +53,6 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 6vw;
-  color: var(--main_border);
-  font-family: var(--main_font);
 }
 
 /* header */
@@ -1392,7 +1394,6 @@ circle.circle {
   display: flex;
   flex-wrap: wrap;
   border-top: 0.1vw dashed #000;
-  border-bottom: 1vw solid #fe451c;
 }
 
 .contactMe__list {
