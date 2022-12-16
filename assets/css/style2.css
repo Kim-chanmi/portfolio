@@ -2,13 +2,28 @@
 @import url(common.css);
 @import url(fonts.css);
 
-html,
+/* html,
 body {
   width: 100%;
 }
 
 body {
   overflow-x: hidden;
+  position: relative;
+} */
+
+html,
+body {
+  max-width: 100%;
+  /* overflow-x: hidden; */
+  position: relative;
+}
+body {
+  overflow: hidden;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* loading */
@@ -310,6 +325,7 @@ body {
 
 /* section2 */
 #section2 {
+  width: 100%;
   color: #fff;
   padding: 2.2vw 2.2vw 5vw 2.2vw;
 }
@@ -505,44 +521,6 @@ body {
 .result.show {
   display: block;
 }
-
-.height__wrap {
-  width: 100%;
-  position: absolute;
-  top: 68%;
-  right: -50%;
-  transform: translate(-50%, -50%);
-  transition: all 1s;
-}
-
-.height__inner {
-  /* width: 100%; */
-  opacity: 0;
-}
-
-.height__inner.show {
-  opacity: 1;
-}
-
-.height__inner .quiz {
-  width: 100%;
-  text-transform: none;
-  font-size: 1.1vw;
-}
-
-/* pre code.hljs {
-  overflow-x: hidden;
-  overflow-y: auto;
-} */
-
-/* .height__inner .quiz span {
-  color: #702c2b;
-}
-
-.height__inner .quiz span:nth-child(2),
-.height__inner .quiz span:nth-child(5) {
-  color: #c56869;
-} */
 
 /* 애니메이션1 */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
@@ -873,6 +851,7 @@ circle.circle {
 
 /* section3 */
 .sec3 {
+  width: 100%;
   padding-bottom: 30vw;
   color: #fff;
   /* clip-path: polygon(0 0, 100% 0, 100% 98%, 0% 100%); */
@@ -1144,6 +1123,7 @@ circle.circle {
 
 /* section4 */
 .sec4 {
+  width: 100%;
   padding: 16vw 2.2vw 3vw 2.2vw;
   box-sizing: border-box;
 }
@@ -1208,6 +1188,7 @@ circle.circle {
 
 /* section5 */
 .sec5 {
+  width: 100%;
   padding: 0 2.2vw 3vw 2.2vw;
   /* margin-top: -20vw; */
   box-sizing: border-box;
@@ -1387,6 +1368,7 @@ circle.circle {
 
 /* section6 */
 .sec6 {
+  width: 100%;
   padding: 16vw 2.2vw 0 2.2vw;
 }
 
