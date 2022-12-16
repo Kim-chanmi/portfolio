@@ -12,7 +12,7 @@ body {
   position: relative;
 } */
 
-html,
+/* html,
 body {
   max-width: 100%;
   /* overflow-x: hidden; */
@@ -24,7 +24,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
+} */
 
 /* loading */
 .progress {
@@ -1543,21 +1543,6 @@ circle.circle {
 
 .w3 {
   transform: rotate3D(0.5, 1, 2, 90deg);
-}
-@media (max-width: 1024px) {
-  html,
-  body {
-    max-width: 100%;
-    overflow-x: hidden;
-    position: relative;
-  }
-  body {
-    overflow: hidden;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
 }
 
 @media (max-width: 1000px) {
