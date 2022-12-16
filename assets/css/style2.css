@@ -2,6 +2,11 @@
 @import url(common.css);
 @import url(fonts.css);
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* loading */
 .progress {
   position: fixed;
