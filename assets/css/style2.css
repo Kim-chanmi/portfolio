@@ -2,8 +2,12 @@
 @import url(common.css);
 @import url(fonts.css);
 
+html,
 body {
   width: 100%;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -231,6 +235,10 @@ body {
   opacity: 0;
   user-select: none;
   pointer-events: none;
+}
+
+.title__inner {
+  width: 100%;
 }
 
 .title__inner > div {
