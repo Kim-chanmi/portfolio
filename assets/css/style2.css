@@ -2,9 +2,9 @@
 @import url(common.css);
 @import url(fonts.css);
 
-body {
+/* body {
   overflow: hidden;
-}
+} */
 
 /* loading */
 .progress {
