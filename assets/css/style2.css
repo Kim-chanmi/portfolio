@@ -2,7 +2,7 @@
 @import url(common.css);
 @import url(fonts.css);
 
-html,
+/* html,
 body {
   width: 100%;
 }
@@ -13,7 +13,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
+} */
 
 main {
   border-bottom: 1vw solid #fe451c;
@@ -401,7 +401,7 @@ body {
   top: 0;
 }
 
-.about__center::after {
+/* .about__center::after {
   content: "";
   width: 1px;
   height: 100%;
@@ -409,7 +409,7 @@ body {
   position: absolute;
   right: -1%;
   top: 0;
-}
+} */
 
 .profileImg {
   border: 0.1vw solid #fff;
@@ -826,6 +826,7 @@ circle.circle {
   width: 100%;
   padding-bottom: 30vw;
   color: #fff;
+  overflow: hidden;
   /* clip-path: polygon(0 0, 100% 0, 100% 98%, 0% 100%); */
 }
 
